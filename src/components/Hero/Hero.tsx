@@ -30,7 +30,7 @@ export const Hero = () => {
         initial="initial"
         animate="end"
         variants={containerBorderRadius}
-        className="relative h-full w-full overflow-hidden rounded-3xl bg-pastel-pink"
+        className="relative h-[85vh] w-full overflow-hidden rounded-3xl bg-pastel-pink md:h-full"
       >
         <div className="absolute top-0 left-0 z-20 h-full w-full">
           <motion.header
