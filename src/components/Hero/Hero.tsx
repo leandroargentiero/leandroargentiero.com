@@ -5,6 +5,7 @@ import type { TWallpaperOptions } from "twallpaper";
 import "twallpaper/dist/twallpaper.css";
 
 import { WHITE, INDIGO, PINK } from "@/constants/colors";
+import { Logo } from "@/components/Logo";
 
 export const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -23,7 +24,7 @@ export const Hero = () => {
       <div className="relative h-full w-full overflow-hidden rounded-3xl bg-pastel-pink">
         <div className="absolute top-0 left-0 z-20 h-full w-full">
           <div className="flex flex-row justify-between p-8">
-            <a href="#">Leandro</a>
+            <Logo />
             <div className="grid grid-flow-col items-center gap-4 font-display text-sm">
               <p>antwerp</p>
               <p>4°C</p>
