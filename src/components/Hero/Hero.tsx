@@ -1,24 +1,12 @@
-import { useRef, useEffect, useState } from "react";
 import { FiSun } from "react-icons/fi";
-import { TWallpaper } from "twallpaper";
-import type { TWallpaperOptions } from "twallpaper";
 import "twallpaper/dist/twallpaper.css";
 
 import { WHITE, INDIGO, PINK } from "@/constants/colors";
 import { Logo } from "@/components/Logo";
+import { Gradient } from "./Gradient";
+import { Grain } from "./Grain";
 
 export const Hero = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [options] = useState<TWallpaperOptions>({
-    tails: 200,
-    colors: [WHITE, INDIGO, INDIGO, PINK],
-  });
-
-  useEffect(() => {
-    const wallpaper = new TWallpaper(containerRef.current, options);
-    wallpaper.updateFrametime(90);
-  }, []);
-
   return (
     <section className="relative h-screen w-screen py-6 px-6">
       <div className="relative h-full w-full overflow-hidden rounded-3xl bg-pastel-pink">
@@ -46,7 +34,8 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div ref={containerRef}></div>
+        <Grain opacity={30} />
+        <Gradient colors={[WHITE, INDIGO, INDIGO, PINK]} tails={200} />
       </div>
     </section>
   );
