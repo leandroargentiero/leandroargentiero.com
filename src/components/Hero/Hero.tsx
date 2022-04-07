@@ -37,12 +37,12 @@ export const Hero = () => {
             initial="initial"
             animate="end"
             variants={fadeInY(0.5, "-1rem", "0rem")}
-            className="flex flex-row justify-between p-8"
+            className="relative z-10 flex flex-row justify-between p-8"
           >
             <Logo />
             <div className="grid grid-flow-col items-center gap-4 font-display text-sm">
-              <p>{city && city}</p>
-              <p>{temp && temp}°C</p>
+              <span>{city && city}</span>
+              <span>{temp && temp}°C</span>
               {icon && <WeatherIcon />}
             </div>
           </motion.header>

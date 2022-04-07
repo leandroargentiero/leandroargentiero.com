@@ -9,14 +9,14 @@ export const useGetWeather = (city: string) => {
   }
 
   const { data, error } = useSWR(
-    `http://api.openweathermap.org/data/2.5/weather?lat=${HOMETOWN_LAT}&lon=${HOMETOWN_LON}&appid=${process.env.NEXT_PUBLIC_WEATHER_API_KEY}&units=metric`,
+    `https://api.openweathermap.org/data/2.5/weather?lat=${HOMETOWN_LAT}&lon=${HOMETOWN_LON}&appid=${process.env.NEXT_PUBLIC_WEATHER_API_KEY}&units=metric`,
     fetcher
   );
 
   const temp = Math.round(data?.main?.temp);
   const currentWeather = data?.weather[0]?.main;
   const icon = mapWeatherToIconName(currentWeather);
-
+  console.log(data?.main?.temp);
   return { city, temp, icon, error };
 };
 
