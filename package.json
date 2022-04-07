@@ -14,6 +14,7 @@
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-icons": "^4.3.1",
+    "swr": "^1.2.2",
     "twallpaper": "^1.0.1"
   },
   "devDependencies": {

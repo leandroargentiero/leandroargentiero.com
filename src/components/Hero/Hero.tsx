@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FiSun } from "react-icons/fi";
+import * as FeatherIcons from "react-icons/fi";
 import "twallpaper/dist/twallpaper.css";
 
 import { WHITE, INDIGO, PINK } from "@/constants/colors";
@@ -12,8 +12,13 @@ import {
   fadeInY,
   paddingContainer,
 } from "./animations";
+import { useGetWeather } from "@/hooks/useWeather";
 
 export const Hero = () => {
+  const { city, temp, icon } = useGetWeather("antwerp");
+  // @ts-expect-error
+  const WeatherIcon = FeatherIcons[icon];
+
   return (
     <motion.section
       initial="initial"
@@ -36,9 +41,9 @@ export const Hero = () => {
           >
             <Logo />
             <div className="grid grid-flow-col items-center gap-4 font-display text-sm">
-              <p>antwerp</p>
-              <p>4°C</p>
-              <FiSun />
+              <p>{city && city}</p>
+              <p>{temp && temp}°C</p>
+              {icon && <WeatherIcon />}
             </div>
           </motion.header>
           <div className="absolute top-0 left-0 grid h-full w-full place-content-center">
