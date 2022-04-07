@@ -4,19 +4,19 @@ import { TWallpaper } from "twallpaper";
 import type { TWallpaperOptions } from "twallpaper";
 import "twallpaper/dist/twallpaper.css";
 
+import { WHITE, INDIGO, PINK } from "@/constants/colors";
+
 export const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [options] = useState<TWallpaperOptions>({
-    tails: 250,
-    colors: ["#9FB0EA", "#F2E3EE", "#B0CDEB", "#fff"],
+    tails: 200,
+    colors: [WHITE, INDIGO, INDIGO, PINK],
   });
 
   useEffect(() => {
     const wallpaper = new TWallpaper(containerRef.current, options);
     wallpaper.updateFrametime(90);
   }, []);
-
-  // CHECK IF WE CAN SIMPLIFY MARKUP
 
   return (
     <section className="relative h-screen w-screen py-6 px-6">
