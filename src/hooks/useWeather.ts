@@ -16,7 +16,7 @@ export const useGetWeather = (city: string) => {
   const temp = Math.round(data?.main?.temp);
   const currentWeather = data?.weather[0]?.main;
   const icon = mapWeatherToIconName(currentWeather);
-  console.log(data?.main?.temp);
+
   return { city, temp, icon, error };
 };
 
