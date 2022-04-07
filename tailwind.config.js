@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        grain: "grain .5s steps(6) infinite",
+        grain: "grain 1.5s steps(6) infinite",
       },
       keyframes: {
         grain: {
