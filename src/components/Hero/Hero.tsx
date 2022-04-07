@@ -85,7 +85,7 @@ export const Hero = () => {
               <motion.h3
                 initial="initial"
                 animate="end"
-                variants={fadeInY(0.5, "1rem", "0rem")}
+                variants={fadeInY(0.5, "1.2rem", "0rem")}
                 className="mt-8 text-center"
               >
                 I craft digital solutions for human problems <br /> that look
