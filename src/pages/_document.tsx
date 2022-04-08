@@ -6,9 +6,7 @@ const Document: NextPage = () => {
     <Html>
       <Head />
       <body>
-        <div className="h-full">
-          <Main />
-        </div>
+        <Main />
         <NextScript />
       </body>
     </Html>
