@@ -9,7 +9,8 @@
       "@/styles/*": ["src/styles/*"],
       "@/types/*": ["src/types/*"],
       "@/utils/*": ["src/utils/*"],
-      "@/constants/*": ["src/constants/*"]
+      "@/constants/*": ["src/constants/*"],
+      "@/sections/*": ["src/sections/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
