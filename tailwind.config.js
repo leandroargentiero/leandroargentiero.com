@@ -2,6 +2,7 @@ module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/sections/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -26,6 +27,12 @@ module.exports = {
         "pastel-pink": "#F2E3EE",
         "pastel-indigo": "#9FB0EA",
         "pastel-blue": "#B0CDEB",
+      },
+      container: {
+        center: true,
+      },
+      gridTemplateColumns: {
+        24: "repeat(24, minmax(0, 1fr))",
       },
     },
   },
