@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { sectionParent, sectionTitle } from "./motionVariants";
+import { sectionParent, sectionTitle } from "./sectionIntroVariants";
 
 declare interface SectionIntroProps {
   title: string;

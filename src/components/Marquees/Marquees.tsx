@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 
-import { marqueeContainer } from "./motionVariants";
+import { marqueeContainer } from "./marqueesVariants";
 
 export const Marquees: React.FC = (): JSX.Element => (
   <motion.div
