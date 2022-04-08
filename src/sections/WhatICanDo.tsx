@@ -1,6 +1,7 @@
-import { SectionIntro } from "@/components/SectionIntro";
-import { Container } from "@/components/Layout";
 import { Section } from "@/components/Layout";
+import { Container } from "@/components/Layout";
+import { SectionIntro } from "@/components/SectionIntro";
+import { Marquees } from "@/components/Marquees";
 
 export const WhatICanDo = () => {
   return (
@@ -14,6 +15,7 @@ export const WhatICanDo = () => {
           alignment="center"
         />
       </Container>
+      <Marquees />
     </Section>
   );
 };
