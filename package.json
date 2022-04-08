@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^6.2.9",
     "next": "12.1.4",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-icons": "^4.3.1",
+    "swr": "^1.2.2",
+    "twallpaper": "^1.0.1"
   },
   "devDependencies": {
     "@types/node": "17.0.23",
@@ -21,6 +25,7 @@
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.4",
     "postcss": "^8.4.12",
+    "prettier-plugin-tailwindcss": "^0.1.8",
     "tailwindcss": "^3.0.23",
     "typescript": "4.6.3"
   }

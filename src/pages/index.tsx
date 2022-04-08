@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import { TestTitle } from "@/components/TestTitle";
+import { Hero } from "@/components/Hero";
 
 const Home: NextPage = () => {
-  return <TestTitle title="leandro" />;
+  return <Hero />;
 };
 
 export default Home;
