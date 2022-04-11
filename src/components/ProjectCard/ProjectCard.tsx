@@ -19,11 +19,13 @@ export const ProjectCard = ({
       <a className="group overflow-hidden rounded-2xl md:even:-translate-y-1/3">
         <figure
           role="listitem"
-          className="relative h-[15rem] w-full bg-red-200 lg:h-[20rem] xl:h-[25rem]"
+          className="relative h-[15rem] w-full lg:h-[20rem] xl:h-[25rem]"
         >
           <Image
             className="object-cover transition duration-300 ease-in-out group-hover:scale-105"
             src={imageSrc}
+            placeholder="blur"
+            blurDataURL={imageSrc}
             layout="fill"
             alt="project-image"
           />
