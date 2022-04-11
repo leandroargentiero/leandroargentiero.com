@@ -1,14 +1,14 @@
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import classNames from "classnames";
 
 declare interface NavButtonProps {
   path: string;
-  text?: string;
-  children?: React.ReactNode;
+  text: string;
 }
 
-export const NavItem = ({ path, text, children }: NavButtonProps) => {
+export const NavItem = ({ path, text }: NavButtonProps) => {
   const [active, setActive] = useState(false);
   const { pathname } = useRouter();
 
@@ -17,16 +17,14 @@ export const NavItem = ({ path, text, children }: NavButtonProps) => {
   }, [pathname, path]);
 
   return (
-    <Link href="#" passHref>
+    <Link href={path} passHref>
       <a
-        className={`px-8 border-white/50 bg-white/20 hover:bg-white/40 border rounded-full ${
-          active && "bg-white/50"
-        }`}
+        className={classNames(
+          "border-black/5 bg-white/20 hover:bg-white/30 hover:border-black/20 border rounded-full px-4 md:px-8",
+          { "border-black/20": active }
+        )}
       >
-        <li
-          className={`relative leading-10 font-display text-sm text-gray-800`}
-        >
-          {children}
+        <li className="relative leading-10 font-display text-sm text-gray-800">
           {text}
         </li>
       </a>
