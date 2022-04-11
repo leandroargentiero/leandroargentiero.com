@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
-import { TWallpaper, TWallpaperOptions } from "twallpaper";
-import "twallpaper/dist/twallpaper.css";
+import { useEffect, useRef, useState } from 'react';
+import { TWallpaper, TWallpaperOptions } from 'twallpaper';
+import 'twallpaper/dist/twallpaper.css';
 
 declare interface GradientProps {
   colors: string[];
@@ -18,7 +18,7 @@ export const Gradient = ({ colors, tails }: GradientProps): JSX.Element => {
   useEffect(() => {
     const wallpaper = new TWallpaper(containerRef.current, options);
     wallpaper.updateFrametime(90);
-  }, []);
+  }, [options]);
 
   return <div ref={containerRef} />;
 };
