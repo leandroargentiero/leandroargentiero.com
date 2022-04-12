@@ -1,8 +1,10 @@
 import type { NextPage } from 'next';
+import Image from 'next/image';
+// @ts-expect-error
+import ReactTextRotate from 'react-text-rotate';
 
 import { PageDetailShell, Section } from '@/components/Layout';
 import { Container } from '@/components/Layout';
-import Image from 'next/image';
 
 const About: NextPage = () => {
   return (
@@ -10,9 +12,13 @@ const About: NextPage = () => {
       <PageDetailShell>
         <Container>
           <Section>
-            <div className="max-w-4xl lg:pl-44">
-              <h1 className="mb-6 font-display text-5xl text-gray-900">
-                Bonjour, Piacere, Enchanté, Aangenaam
+            <div className="max-w-4xl pt-12  md:pt-0 lg:pl-44">
+              <h1 className="mb-6 h-8 font-display text-3xl text-gray-900 md:h-14 md:text-5xl">
+                <ReactTextRotate
+                  texts={['Hello', 'Aangenaam', 'Piacere', 'Enchanté']}
+                  speed={1.5}
+                  period={1000}
+                />
               </h1>
               <div className="flex flex-col gap-6 font-body leading-relaxed text-gray-500">
                 <p>
@@ -58,7 +64,7 @@ const About: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className="my-10 mx-auto max-w-3xl">
+            <div className="my-10 mx-auto max-w-2xl">
               <figure className="relative z-0 overflow-hidden rounded-2xl">
                 <Image
                   className="object-cover"
