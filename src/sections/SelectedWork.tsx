@@ -24,7 +24,7 @@ export const SelectedWork = () => {
           ))}
         </div>
         <div className="text-center">
-          <Button>Discover more projets</Button>
+          <Button>Discover more projects</Button>
         </div>
       </Container>
     </Section>
