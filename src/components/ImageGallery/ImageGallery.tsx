@@ -18,7 +18,6 @@ export const ImageGallery = () => {
                 width={image.width}
                 height={image.height}
                 placeholder="blur"
-                blurDataURL={image.src}
                 alt={image.description}
               />
               <div className="absolute top-0 left-0 z-10 hidden h-full w-full flex-col justify-between bg-gallery-image-gradient p-7 group-hover:flex">

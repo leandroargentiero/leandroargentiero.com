@@ -1,21 +1,21 @@
-import { motion } from "framer-motion";
-import * as FeatherIcons from "react-icons/fi";
-import "twallpaper/dist/twallpaper.css";
+import { motion } from 'framer-motion';
+import * as FeatherIcons from 'react-icons/fi';
+import 'twallpaper/dist/twallpaper.css';
 
-import { WHITE, INDIGO, PINK } from "@/constants/colors";
-import { Logo } from "@/components/Logo";
-import { Gradient } from "./Gradient";
-import { Grain } from "./Grain";
+import { WHITE, INDIGO, PINK } from '@/constants/colors';
+import { Logo } from '@/components/Logo';
+import { Gradient } from './Gradient';
+import { Grain } from './Grain';
 import {
   containerBorderRadius,
   fadeInX,
   fadeInY,
   paddingContainer,
-} from "./animations";
-import { useGetWeather } from "@/hooks/useWeather";
+} from './animations';
+import { useGetWeather } from '@/hooks/useWeather';
 
 export const Hero = () => {
-  const { city, temp, icon } = useGetWeather("antwerp");
+  const { city, temp, icon } = useGetWeather('antwerp');
   // @ts-expect-error
   const WeatherIcon = FeatherIcons[icon];
 
@@ -36,13 +36,13 @@ export const Hero = () => {
           <motion.header
             initial="initial"
             animate="end"
-            variants={fadeInY(0.5, "-1rem", "0rem")}
+            variants={fadeInY(0.5, '-1rem', '0rem')}
             className="relative z-10 flex flex-row justify-between p-8"
           >
             <Logo />
             <div className="grid grid-flow-col items-center gap-4 font-display text-sm">
-              <span>{city && city}</span>
-              <span>{temp && temp}°C</span>
+              <span>{city ? city : '-'}</span>
+              <span>{temp ? temp : '-'}°C</span>
               {icon && <WeatherIcon />}
             </div>
           </motion.header>
@@ -51,7 +51,7 @@ export const Hero = () => {
               <motion.h2
                 initial="initial"
                 animate="end"
-                variants={fadeInY(0.5, "-1rem", "0rem")}
+                variants={fadeInY(0.5, '-1rem', '0rem')}
                 className="mb-4"
               >
                 Hi, I&apos;m Leandro
@@ -60,7 +60,7 @@ export const Hero = () => {
                 <motion.span
                   initial="initial"
                   animate="end"
-                  variants={fadeInX(0.5, "2.5rem", "0rem", 0.2)}
+                  variants={fadeInX(0.5, '2.5rem', '0rem', 0.2)}
                   className="-ml-20"
                 >
                   frontend
@@ -68,7 +68,7 @@ export const Hero = () => {
                 <motion.span
                   initial="initial"
                   animate="end"
-                  variants={fadeInX(0.5, "-2.5rem", "0rem", 0.2)}
+                  variants={fadeInX(0.5, '-2.5rem', '0rem', 0.2)}
                   className="ml-24"
                 >
                   developer
@@ -76,16 +76,16 @@ export const Hero = () => {
                 <motion.span
                   initial="initial"
                   animate="end"
-                  variants={fadeInX(0.5, "2.5rem", "0rem", 0.2)}
+                  variants={fadeInX(0.5, '2.5rem', '0rem', 0.2)}
                   className="-ml-4 "
                 >
-                  {"& designer"}
+                  {'& designer'}
                 </motion.span>
               </h1>
               <motion.h3
                 initial="initial"
                 animate="end"
-                variants={fadeInY(0.5, "1.2rem", "0rem")}
+                variants={fadeInY(0.5, '1.2rem', '0rem')}
                 className="mt-8 text-center"
               >
                 I craft digital solutions for human problems <br /> that look

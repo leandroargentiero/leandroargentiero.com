@@ -10,7 +10,8 @@
       "@/types/*": ["src/types/*"],
       "@/utils/*": ["src/utils/*"],
       "@/constants/*": ["src/constants/*"],
-      "@/sections/*": ["src/sections/*"]
+      "@/sections/*": ["src/sections/*"],
+      "@/public/assets/*": ["public/assets/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
