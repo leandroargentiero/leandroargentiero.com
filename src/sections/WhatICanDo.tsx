@@ -9,10 +9,8 @@ export const WhatICanDo = () => {
     <Section>
       <Container>
         <SectionIntro
-          title="What I can do"
-          subtitle="Through my studies and experience as a developer/designer, I've
-            gained a solid understanding of computer science and web development
-            concepts."
+          title="What I can do for you"
+          subtitle="I've worked and dabbled with various technologies and design principles. Due to my experience as both a designer and developer, I've gained a solid understanding of the intersection between product, design, and code."
           alignment="center"
         />
       </Container>

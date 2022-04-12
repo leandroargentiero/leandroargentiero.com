@@ -8,11 +8,11 @@ export const Footer = () => {
   return (
     <Section>
       <Container>
-        <footer className="overflow-hidden rounded-3xl bg-gray-100 px-12 pt-24 pb-12">
-          <div className="mb-16 grid grid-cols-2">
+        <footer className="overflow-hidden rounded-3xl bg-gray-100 px-6 pb-6 pt-12 md:px-12 md:pb-12 md:pt-24">
+          <div className="mb-8 grid grid-cols-1 md:mb-16 md:grid-cols-2">
             <div className="flex flex-col justify-between font-display">
               <div className="mb-8">
-                <h3 className="mb-4 text-3xl text-gray-900">
+                <h3 className="mb-4 text-2xl text-gray-900 md:text-3xl">
                   Let&apos;s build something together.
                 </h3>
                 <p className="font-body text-gray-400">
@@ -21,11 +21,14 @@ export const Footer = () => {
                   to connect.
                 </p>
               </div>
-              <a href="#" className="text-2xl underline hover:no-underline">
+              <a
+                href="#"
+                className="text-xl underline hover:no-underline md:text-2xl"
+              >
                 ciao@leandroargentiero.com
               </a>
             </div>
-            <div className="flex flex-row justify-center gap-24">
+            <div className="mt-12 flex flex-col flex-wrap gap-5 sm:flex-row sm:gap-24 md:mt-0 md:justify-end md:gap-5 lg:gap-16 xl:justify-center xl:gap-24">
               <FooterList title="Find me on">
                 <FooterItem asLink href="https://github.com/leandroargentiero/">
                   Github
