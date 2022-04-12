@@ -1,11 +1,11 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import { sectionParent, sectionTitle } from "./sectionIntroVariants";
+import { sectionParent, sectionTitle } from './sectionIntroVariants';
 
 declare interface SectionIntroProps {
   title: string;
   subtitle: string;
-  alignment: "left" | "center";
+  alignment: 'left' | 'center';
 }
 
 export const SectionIntro = ({
@@ -19,19 +19,19 @@ export const SectionIntro = ({
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className={`flex gap-3 flex-col max-w-xl text-${alignment} ${
-        alignment === "center" ? "mx-auto" : "mx-right"
+      className={`flex max-w-2xl flex-col gap-3 text-${alignment} ${
+        alignment === 'center' ? 'mx-auto' : 'mx-right'
       }`}
     >
       <motion.h2
         variants={sectionTitle}
-        className="font-display text-gray-900 text-3xl md:text-5xl"
+        className="font-display text-3xl text-gray-900 md:text-5xl"
       >
         {title}
       </motion.h2>
       <motion.h3
         variants={sectionTitle}
-        className="font-body text-gray-400 text-base"
+        className="font-body text-base text-gray-400"
       >
         {subtitle}
       </motion.h3>
