@@ -4,7 +4,7 @@ import { sectionParent, sectionTitle } from './sectionIntroVariants';
 
 declare interface SectionIntroProps {
   title: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   alignment: 'left' | 'center';
 }
 

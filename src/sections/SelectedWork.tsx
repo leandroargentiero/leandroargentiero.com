@@ -7,11 +7,7 @@ export const SelectedWork = () => {
   return (
     <Section>
       <Container>
-        <SectionIntro
-          title="Selected work"
-          subtitle="lorem ipsum"
-          alignment="left"
-        />
+        <SectionIntro title="Selected work" alignment="left" />
         <div
           role="list"
           className="my-12 grid grid-flow-row grid-cols-1 gap-8 md:grid-cols-2 lg:my-32 lg:gap-16 xl:gap-48"

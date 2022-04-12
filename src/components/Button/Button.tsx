@@ -3,7 +3,7 @@ import classNames from 'classnames';
 declare interface ButtonProps {
   children: string;
   isFullWidth?: boolean;
-  href: string;
+  href?: string;
   target?: string;
 }
 
