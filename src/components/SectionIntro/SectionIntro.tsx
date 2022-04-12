@@ -4,13 +4,13 @@ import { sectionParent, sectionTitle } from './sectionIntroVariants';
 
 declare interface SectionIntroProps {
   title: string;
-  subtitle: string;
+  children: React.ReactNode;
   alignment: 'left' | 'center';
 }
 
 export const SectionIntro = ({
   title,
-  subtitle,
+  children,
   alignment,
 }: SectionIntroProps) => {
   return (
@@ -33,7 +33,7 @@ export const SectionIntro = ({
         variants={sectionTitle}
         className="font-body text-base text-gray-400"
       >
-        {subtitle}
+        {children}
       </motion.h3>
     </motion.div>
   );
