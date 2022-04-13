@@ -4,8 +4,8 @@ import { Navigation } from '@/components/Navigation';
 import { Hero } from '@/components/Hero';
 import { Footer } from '@/components/Footer';
 
-import WhatICanDo from '@/sections/WhatICanDo';
-import SelectedWork from '@/sections/SelectedWork';
+import WhatICanDo from '@/sections/Home/WhatICanDo';
+import SelectedWork from '@/sections/Home/SelectedWork';
 
 const Home: NextPage = () => {
   return (
