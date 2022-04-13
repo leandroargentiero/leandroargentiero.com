@@ -15,17 +15,17 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   return (
-    <a
-      href={href}
-      target={target}
-      type="button"
-      className={classNames(
-        'rounded-full bg-gray-900 py-4 px-6 font-display text-base text-white outline-8 outline-offset-2 outline-gray-300 hover:cursor-pointer hover:bg-gray-800',
-        { 'block w-full': isFullWidth }
-      )}
-      {...props}
-    >
-      {children}
+    <a href={href} target={target}>
+      <button
+        type="button"
+        className={classNames(
+          'rounded-full bg-gray-900 py-4 px-6 font-display text-base text-white outline-8 outline-offset-2 outline-gray-300 hover:cursor-pointer hover:bg-gray-800',
+          { 'block w-full': isFullWidth }
+        )}
+        {...props}
+      >
+        {children}
+      </button>
     </a>
   );
 };
