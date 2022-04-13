@@ -1,25 +1,12 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import useSWR from 'swr';
-// @ts-expect-error
-import ReactTextRotate from 'react-text-rotate';
 
 import { PageDetailShell, Section } from '@/components/Layout';
 import { Container } from '@/components/Layout';
-import { SectionIntro } from '@/components/SectionIntro';
-import { ImageGallery } from '@/components/ImageGallery';
 import { PageHeader } from '@/components/PageHeader';
-import { fetcherWithToken } from '@/hooks/fetcher';
+import Photography from '@/sections/About/Photography';
 
 const About: NextPage = () => {
-  const API_KEY = process.env.NEXT_PUBLIC_UNSPLASH_ACCESS_KEY;
-  const { data, error } = useSWR(
-    ['https://api.unsplash.com/users/leaero/statistics', API_KEY],
-    fetcherWithToken
-  );
-
-  console.log(data);
-
   return (
     <>
       <PageDetailShell>
@@ -66,9 +53,9 @@ const About: NextPage = () => {
             beauty of the world with my Fujifilm camera.
           </p>
         </PageHeader>
-        <Section className="pt-10">
+        <Section>
           <Container>
-            <div className="mx-auto max-w-2xl py-10">
+            <div className="mx-auto max-w-2xl">
               <figure className="relative z-0 overflow-hidden rounded-lg">
                 <Image
                   className="object-cover"
@@ -81,50 +68,13 @@ const About: NextPage = () => {
                   alt="A picture of me surfing in Indonesia"
                 />
               </figure>
-              <figcaption className="relative p-1 px-3 font-body text-sm text-gray-400 before:contents before:text-pastel-indigo before:content-['•']">
+              <figcaption className="relative p-1 px-1 font-body text-sm text-gray-400 before:mr-1 before:text-pastel-indigo before:content-['•']">
                 That&apos;s me doing a bottom turn in Lombok, Indonesia.
               </figcaption>
             </div>
           </Container>
         </Section>
-        <Section>
-          <Container>
-            <SectionIntro title="Photography" alignment="center">
-              Here you can find some of the images I took over the last years. I
-              also have an Instagram page where I regularly post the shots I
-              took with my camera.
-            </SectionIntro>
-            <div className="mx-auto mt-10 flex max-w-xl flex-row justify-between gap-8">
-              <div className="w-1/2 rounded-xl border border-gray-200 py-6 text-center">
-                <a
-                  href="https://unsplash.com/@leaero"
-                  target="_blank"
-                  className="font-body text-base text-gray-400 hover:underline"
-                  rel="noreferrer"
-                >
-                  Unsplash Views
-                </a>
-                <h3 className="mt-4 font-display text-3xl text-gray-900">
-                  {data ? data?.views.total.toLocaleString('fr-FR') : '-'}
-                </h3>
-              </div>
-              <div className="w-1/2 rounded-xl border border-gray-200 py-6 text-center">
-                <a
-                  href="https://unsplash.com/@leaero"
-                  target="_blank"
-                  className="font-body text-base text-gray-400 hover:underline"
-                  rel="noreferrer"
-                >
-                  Unsplash Downloads
-                </a>
-                <h3 className="mt-4 font-display text-3xl text-gray-900">
-                  {data ? data?.downloads.total.toLocaleString('fr-FR') : '-'}
-                </h3>
-              </div>
-            </div>
-            <ImageGallery />
-          </Container>
-        </Section>
+        <Photography />
       </PageDetailShell>
     </>
   );

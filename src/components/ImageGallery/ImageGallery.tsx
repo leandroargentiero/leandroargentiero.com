@@ -2,12 +2,11 @@ import Image from 'next/image';
 import { FiMapPin } from 'react-icons/fi';
 
 import { images } from './images';
-import { Button } from '@/components/Button';
 
 export const ImageGallery = () => {
   return (
     <>
-      <div className="masonry sm:masonry-sm md:masonry-md my-24">
+      <div className="masonry sm:masonry-sm md:masonry-md">
         {images.map((image, i) => (
           <figure key={i} className="break-inside overflow-hidden py-4">
             <div className="group relative h-full w-full overflow-hidden rounded-lg">
@@ -31,14 +30,6 @@ export const ImageGallery = () => {
             </div>
           </figure>
         ))}
-      </div>
-      <div className="text-center">
-        <Button
-          href="https://www.instagram.com/leandroargentiero/"
-          target="_blank"
-        >
-          See more on Instagram
-        </Button>
       </div>
     </>
   );

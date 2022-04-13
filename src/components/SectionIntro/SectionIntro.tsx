@@ -19,7 +19,7 @@ export const SectionIntro = ({
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className={`flex max-w-2xl flex-col gap-3 text-${alignment} ${
+      className={`flex max-w-2xl flex-col gap-3 text-left md:text-${alignment} ${
         alignment === 'center' ? 'mx-auto' : 'mx-right'
       }`}
     >
