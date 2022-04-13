@@ -1,10 +1,16 @@
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
+
 import readingTime from 'reading-time';
+import remarkGfm from 'remark-gfm';
+import rehypeSlug from 'rehype-slug';
+import rehypeCodeTitles from 'rehype-code-titles';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypePrism from 'rehype-prism-plus';
 
 export const Project = defineDocumentType(() => ({
   name: 'Project',
   filePathPattern: 'projects/*.mdx',
-  bodyType: 'mdx',
+  contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
     selected: { type: 'boolean', required: true },
@@ -20,7 +26,7 @@ export const Project = defineDocumentType(() => ({
     readingTime: { type: 'json', resolve: (doc) => readingTime(doc.body.raw) },
     slug: {
       type: 'string',
-      resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx/, ''),
+      resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ''),
     },
   },
 }));
@@ -28,9 +34,14 @@ export const Project = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: 'src/data',
   documentTypes: [Project],
-  disableImportAliasWarning: true,
   mdx: {
-    remarkPlugins: [],
-    rehypePlugins: [],
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [
+      rehypeSlug,
+      rehypeCodeTitles,
+      rehypePrism,
+      rehypeAutolinkHeadings,
+    ],
   },
+  disableImportAliasWarning: true,
 });

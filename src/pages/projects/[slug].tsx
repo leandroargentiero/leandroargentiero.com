@@ -2,13 +2,10 @@ import { useMDXComponent } from 'next-contentlayer/hooks';
 import { allProjects } from '.contentlayer/generated';
 import type { Project } from '.contentlayer/generated/types';
 
+import { MDXComponents } from '@/components/MDXComponents';
 import { Container, PageDetailShell, Section } from '@/components/Layout';
 import { PageHeader } from '@/components/PageHeader';
 import Image from 'next/image';
-
-interface ProjectProps {
-  project: Project;
-}
 
 const ProjectInfo = ({ label, data }: { label: string; data: [] }) => (
   <div>
@@ -18,7 +15,9 @@ const ProjectInfo = ({ label, data }: { label: string; data: [] }) => (
   </div>
 );
 
-export default function Project({ project }: ProjectProps) {
+export default function Project({ project }: { project: Project }) {
+  const Component = useMDXComponent(project.body.code);
+
   console.log(project);
 
   return (
@@ -46,10 +45,9 @@ export default function Project({ project }: ProjectProps) {
         </figure>
       </Container>
       <Section>
-        <article
-          className="prose mx-auto prose-headings:font-display prose-headings:text-gray-900 prose-p:font-body prose-p:text-gray-500 lg:prose-lg"
-          dangerouslySetInnerHTML={{ __html: project.body.html }}
-        />
+        <article className="prose mx-auto prose-headings:font-display  prose-headings:text-gray-900 prose-p:font-body prose-p:text-gray-500 lg:prose-lg">
+          <Component components={MDXComponents} />
+        </article>
       </Section>
     </PageDetailShell>
   );
