@@ -13,7 +13,6 @@ export const Project = defineDocumentType(() => ({
   contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
-    selected: { type: 'boolean', required: true },
     publishedAt: { type: 'string', required: true },
     description: { type: 'string', required: true },
     company: { type: 'string', required: true },

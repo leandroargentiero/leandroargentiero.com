@@ -1,17 +1,17 @@
-import indo1 from '@/public/assets/indo-1.jpg';
-import lanzarote8 from '@/public/assets/lanzarote-8.jpg';
-import p29Nature04 from '@/public/assets/p29-nature-04.jpg';
-import senegal6 from '@/public/assets/senegal-6.jpg';
-import lanzarote10 from '@/public/assets/lanzarote-10.jpg';
-import senegal3 from '@/public/assets/senegal-3.jpg';
-import portgal5 from '@/public/assets/portugal-5.jpg';
-import lanzarote6 from '@/public/assets/lanzarote-6.jpg';
-import senegal4 from '@/public/assets/senegal-4.jpg';
-import indonesia from '@/public/assets/indonesia.jpg';
-import senegal5 from '@/public/assets/senegal-5.jpg';
-import senegal from '@/public/assets/senegal.jpg';
-import senegal9 from '@/public/assets/senegal-9.jpg';
-import lanzarote3 from '@/public/assets/lanzarote-3.jpg';
+import indo1 from '@static/photography/indo-1.jpg';
+import lanzarote8 from '@static/photography/lanzarote-8.jpg';
+import p29Nature04 from '@static/photography/p29-nature-04.jpg';
+import senegal6 from '@static/photography/senegal-6.jpg';
+import lanzarote10 from '@static/photography/lanzarote-10.jpg';
+import senegal3 from '@static/photography/senegal-3.jpg';
+import portgal5 from '@static/photography/portugal-5.jpg';
+import lanzarote6 from '@static/photography/lanzarote-6.jpg';
+import senegal4 from '@static/photography/senegal-4.jpg';
+import indonesia from '@static/photography/indonesia.jpg';
+import senegal5 from '@static/photography/senegal-5.jpg';
+import senegal from '@static/photography/senegal.jpg';
+import senegal9 from '@static/photography/senegal-9.jpg';
+import lanzarote3 from '@static/photography/lanzarote-3.jpg';
 
 export const images = [
   {
