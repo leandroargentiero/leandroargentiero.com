@@ -50,9 +50,6 @@ export const SelectedWork = () => {
             imageSrc="/static/projects/covid19-dashboard/cover.jpg"
           />
         </div>
-        <div className="text-center">
-          <Button>Discover more projects</Button>
-        </div>
       </Container>
     </Section>
   );
