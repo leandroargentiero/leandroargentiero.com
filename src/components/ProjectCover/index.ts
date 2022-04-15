@@ -1,0 +1,1 @@
+export { ProjectCover } from './ProjectCover';
