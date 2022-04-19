@@ -28,7 +28,7 @@ const About: NextPage = () => {
           <p>
             Today my main focus is developing solutions for human problems that
             look good and work well. My preferred technology stack is
-            <span className="font-semibold text-gray-800">
+            <span className="font-semibold text-gray-800 dark:text-gray-300">
               {' '}
               Javascript (ES6+), React, Next.js, TailwindCSS, Chakra UI, and
               recently I&apos;ve been dabbling with Typescript
@@ -53,7 +53,7 @@ const About: NextPage = () => {
             beauty of the world with my Fujifilm camera.
           </p>
         </PageHeader>
-        <Section>
+        <Section className="pt-8 md:pt-16">
           <Container>
             <div className="mx-auto max-w-2xl">
               <figure className="relative z-0 overflow-hidden rounded-lg">

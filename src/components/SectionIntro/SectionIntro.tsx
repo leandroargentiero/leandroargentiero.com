@@ -27,7 +27,7 @@ export const SectionIntro = ({
     >
       <motion.h2
         variants={sectionTitle}
-        className="font-display text-3xl text-gray-900 md:text-5xl"
+        className="font-display text-3xl md:text-5xl"
       >
         {title}
       </motion.h2>

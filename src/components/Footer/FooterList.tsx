@@ -9,8 +9,10 @@ export const FooterList = ({
 }: IFooterListProps): JSX.Element => {
   return (
     <div>
-      <h6 className="text-md font-display text-gray-800 lg:text-lg">{title}</h6>
-      <ul className="text-md mt-4 flex flex-col justify-between gap-2 font-body text-gray-500 lg:gap-3">
+      <h6 className="font-display text-sm text-gray-800 dark:text-gray-100">
+        {title}
+      </h6>
+      <ul className="mt-4 flex flex-col justify-between gap-2 font-body text-sm text-gray-400 lg:gap-3">
         {children}
       </ul>
     </div>
