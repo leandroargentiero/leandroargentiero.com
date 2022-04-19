@@ -19,12 +19,12 @@ export const Navigation = () => (
       variants={navList}
       initial="hidden"
       animate="show"
-      className="flex flex-row items-center justify-center gap-2 rounded-full border border-black/5 bg-black/5 py-2 px-4 backdrop-blur-[5px]"
+      className="flex flex-row items-center justify-center gap-2 rounded-full border border-black/5 bg-gray-100/50 py-2 px-4 backdrop-blur-[3px] dark:border-white/10 dark:bg-gray-900/40"
     >
       <NavItem text="Home" path="/" />
       <NavItem text="About" path="/about" />
       <div className="mx-1 h-6">
-        <hr className="h-full border-l border-white/40" />
+        <hr className="h-full border-l border-black/5 dark:border-white/10" />
       </div>
       <ThemeSwitcher />
     </motion.ul>

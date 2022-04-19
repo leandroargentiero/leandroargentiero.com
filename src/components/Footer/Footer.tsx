@@ -6,7 +6,7 @@ import { FooterCredits } from './FooterCredits';
 export const Footer = () => {
   return (
     <footer className="p-4 pb-24 xl:pb-5">
-      <div className="rounded-2xl bg-gray-100 py-8 px-5 dark:bg-gray-700 md:p-16 md:pt-24">
+      <div className="rounded-2xl bg-gray-100 py-8 px-5 dark:bg-gray-800 md:p-16 md:pt-24">
         <div className="max-w-[1400px]">
           <div className="mb-8 grid grid-cols-1 md:mb-12 md:gap-8 lg:grid-cols-2">
             <FooterCta />

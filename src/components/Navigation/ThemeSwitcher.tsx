@@ -13,41 +13,25 @@ export const ThemeSwitcher = () => {
     setMounted(true);
   }, []);
 
-  const renderThemeChanger = () => {
+  const renderIcon = () => {
     if (!mounted) return null;
 
     const currentTheme = theme === 'system' ? systemTheme : theme;
 
-    if (currentTheme === 'dark') {
-      return (
-        <FiSun
-          role="button"
-          onClick={() => {
-            setTheme('light');
-            play();
-          }}
-        />
-      );
-    } else {
-      return (
-        <FiMoon
-          role="button"
-          onClick={() => {
-            setTheme('dark');
-            play();
-          }}
-        />
-      );
-    }
+    return currentTheme === 'dark' ? <FiSun /> : <FiMoon />;
   };
 
   return (
     <motion.a
+      onClick={() => {
+        setTheme(theme === 'light' ? 'dark' : 'light');
+        play();
+      }}
       whileHover={{ rotate: '30deg' }}
-      className="rounded-full border border-black/5 bg-white/20 p-3 hover:cursor-pointer hover:border-black/20 hover:bg-white/40"
+      className="rounded-full border border-black/5 bg-gray-50 p-3 hover:cursor-pointer hover:border-black/30 hover:bg-white/40 dark:border-white/10 dark:bg-gray-900 dark:hover:border-white/40"
     >
-      <li className="font-display text-sm text-gray-800">
-        {renderThemeChanger()}
+      <li className="font-display text-sm text-gray-800 dark:text-gray-300">
+        {renderIcon()}
       </li>
     </motion.a>
   );
