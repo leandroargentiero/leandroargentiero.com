@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { motion } from 'framer-motion';
 
 import { sectionParent, sectionTitle } from './sectionIntroVariants';
@@ -19,9 +20,10 @@ export const SectionIntro = ({
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className={`flex max-w-2xl flex-col gap-3 text-left md:text-${alignment} ${
-        alignment === 'center' ? 'mx-auto' : 'mx-right'
-      }`}
+      className={classNames('flex max-w-2xl flex-col gap-3', {
+        'mx-auto': alignment === 'center',
+        'lg:text-center': alignment === 'center',
+      })}
     >
       <motion.h2
         variants={sectionTitle}
