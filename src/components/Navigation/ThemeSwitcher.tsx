@@ -28,7 +28,7 @@ export const ThemeSwitcher = () => {
         play();
       }}
       whileHover={{ rotate: '30deg' }}
-      className="rounded-full border border-black/5 bg-gray-50 p-3 hover:cursor-pointer hover:border-black/30 hover:bg-white/40 dark:border-white/10 dark:bg-gray-900 dark:hover:border-white/40"
+      className="rounded-full border border-black/5 bg-gray-50 p-3 hover:cursor-pointer hover:border-black/30 dark:border-white/10 dark:bg-gray-900 dark:hover:border-white/40"
     >
       <li className="font-display text-sm text-gray-800 dark:text-gray-300">
         {renderIcon()}

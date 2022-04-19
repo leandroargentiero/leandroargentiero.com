@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import classNames from 'classnames';
 
 import { NavItem } from './NavItem';
 import { navContainer, navList } from './navigationVariants';
@@ -10,10 +9,9 @@ export const Navigation = () => (
     variants={navContainer}
     initial="hidden"
     animate="show"
-    className={classNames(
-      'fixed left-1/2 z-20 translate-x-[-50%]',
-      'bottom-4 md:bottom-8'
-    )}
+    className={
+      'fixed left-1/2 bottom-8 z-20 w-full translate-x-[-50%] md:bottom-8'
+    }
   >
     <motion.ul
       variants={navList}
