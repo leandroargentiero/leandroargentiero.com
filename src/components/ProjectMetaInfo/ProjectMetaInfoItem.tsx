@@ -1,6 +1,6 @@
 interface ProjectMetaInfoItem {
   label: 'Company' | 'Role' | 'Year';
-  value: [] | string;
+  value: any;
 }
 
 export const ProjectMetaInfoItem = ({ label, value }: ProjectMetaInfoItem) => (
@@ -8,7 +8,7 @@ export const ProjectMetaInfoItem = ({ label, value }: ProjectMetaInfoItem) => (
     <h3 className="mb-2 font-display text-gray-900">{label}</h3>
     <ul className="flex flex-col gap-2 text-sm">
       {label === 'Role' ? (
-        value.map((v) => <li key={v}>{v}</li>)
+        value.map((v: string) => <li key={v}>{v}</li>)
       ) : (
         <li>{value}</li>
       )}
