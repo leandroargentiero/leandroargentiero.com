@@ -23,7 +23,8 @@
     "react-text-rotate": "^0.2.5",
     "reading-time": "^1.5.0",
     "swr": "^1.2.2",
-    "twallpaper": "^1.0.1"
+    "twallpaper": "^1.0.1",
+    "use-sound": "^4.0.1"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.2",
