@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import classNames from "classnames";
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import classNames from 'classnames';
 
 declare interface NavButtonProps {
   path: string;
@@ -19,12 +19,11 @@ export const NavItem = ({ path, text }: NavButtonProps) => {
   return (
     <Link href={path} passHref>
       <a
-        className={classNames(
-          "border-black/5 bg-white/20 hover:bg-white/30 hover:border-black/20 border rounded-full px-4 md:px-8",
-          { "border-black/20": active }
-        )}
+        className={
+          'rounded-full border border-black/5 bg-gray-50 px-4 hover:border-black/30 dark:border-white/10 dark:bg-gray-900 dark:hover:border-white/40 md:px-8'
+        }
       >
-        <li className="relative leading-10 font-display text-sm text-gray-800">
+        <li className="relative font-display text-sm leading-10 text-gray-800 dark:text-gray-300">
           {text}
         </li>
       </a>

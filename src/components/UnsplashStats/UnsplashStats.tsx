@@ -9,7 +9,7 @@ interface IUnsplashStatCard {
 
 export const UnsplahStatCard = ({ label, value }: IUnsplashStatCard) => {
   return (
-    <div className="w-1/2 rounded-xl border border-gray-200 p-6 text-center">
+    <div className="w-1/2 rounded-xl border border-gray-200 p-6 text-center dark:border-gray-700">
       <a
         href="https://unsplash.com/@leaero"
         target="_blank"
@@ -18,7 +18,9 @@ export const UnsplahStatCard = ({ label, value }: IUnsplashStatCard) => {
       >
         {label}
       </a>
-      <h3 className="mt-4 font-display text-3xl text-gray-900">{value}</h3>
+      <h3 className="mt-4 font-display text-3xl text-gray-900 dark:text-gray-100">
+        {value}
+      </h3>
     </div>
   );
 };

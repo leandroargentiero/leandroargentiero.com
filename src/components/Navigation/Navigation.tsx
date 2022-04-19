@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import classNames from 'classnames';
 
 import { NavItem } from './NavItem';
 import { navContainer, navList } from './navigationVariants';
@@ -10,21 +9,20 @@ export const Navigation = () => (
     variants={navContainer}
     initial="hidden"
     animate="show"
-    className={classNames(
-      'fixed left-1/2 z-20 translate-x-[-50%]',
-      'bottom-4 md:bottom-8'
-    )}
+    className={
+      'fixed left-1/2 bottom-8 z-20 w-full translate-x-[-50%] md:bottom-8'
+    }
   >
     <motion.ul
       variants={navList}
       initial="hidden"
       animate="show"
-      className="flex flex-row items-center justify-center gap-2 rounded-full border border-black/5 bg-black/5 py-2 px-4 backdrop-blur-[5px]"
+      className="flex flex-row items-center justify-center gap-2 rounded-full border border-black/5 bg-gray-100/50 py-2 px-4 backdrop-blur-[3px] dark:border-white/10 dark:bg-gray-900/40"
     >
       <NavItem text="Home" path="/" />
       <NavItem text="About" path="/about" />
       <div className="mx-1 h-6">
-        <hr className="h-full border-l border-white/40" />
+        <hr className="h-full border-l border-black/5 dark:border-white/10" />
       </div>
       <ThemeSwitcher />
     </motion.ul>

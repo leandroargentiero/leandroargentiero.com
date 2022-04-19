@@ -30,7 +30,7 @@ export const Hero = () => {
         initial="initial"
         animate="end"
         variants={containerBorderRadius}
-        className="relative h-[90vh] w-full overflow-hidden rounded-3xl bg-pastel-pink md:h-full"
+        className="relative h-full w-full overflow-hidden rounded-3xl bg-pastel-pink md:h-full"
       >
         <div className="absolute top-0 left-0 z-20 h-full w-full">
           <motion.header
@@ -40,7 +40,7 @@ export const Hero = () => {
             className="relative z-10 flex flex-row justify-between p-8"
           >
             <Logo />
-            <div className="grid grid-flow-col items-center gap-4 font-display text-sm">
+            <div className="grid grid-flow-col items-center gap-4 font-display text-sm text-gray-800">
               <span>{city ? city : '-'}</span>
               <span>{temp ? temp : '-'}°C</span>
               {icon && <WeatherIcon />}

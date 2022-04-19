@@ -34,7 +34,9 @@ export const ProjectCard = ({
           <span className="text-xs uppercase tracking-widest text-pastel-pink group-even:text-pastel-indigo lg:text-sm">
             {label}
           </span>
-          <h3 className="text-xl group-hover:underline lg:text-3xl">{title}</h3>
+          <h3 className="text-xl text-gray-900 group-hover:underline lg:text-3xl">
+            {title}
+          </h3>
         </div>
       </a>
     </Link>
