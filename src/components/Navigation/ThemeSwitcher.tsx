@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import { FiMoon, FiSun } from 'react-icons/fi';
 import useSound from 'use-sound';
@@ -41,10 +42,13 @@ export const ThemeSwitcher = () => {
   };
 
   return (
-    <a className="rounded-full border border-black/5 bg-white/20 p-3 hover:cursor-pointer hover:border-black/20 hover:bg-white/40">
+    <motion.a
+      whileHover={{ rotate: '30deg' }}
+      className="rounded-full border border-black/5 bg-white/20 p-3 hover:cursor-pointer hover:border-black/20 hover:bg-white/40"
+    >
       <li className="font-display text-sm text-gray-800">
         {renderThemeChanger()}
       </li>
-    </a>
+    </motion.a>
   );
 };

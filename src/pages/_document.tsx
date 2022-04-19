@@ -5,7 +5,7 @@ const Document: NextPage = () => {
   return (
     <Html>
       <Head />
-      <body className="dark:bg-black dark:text-white">
+      <body>
         <Main />
         <NextScript />
       </body>
