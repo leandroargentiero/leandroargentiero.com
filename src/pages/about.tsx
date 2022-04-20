@@ -14,7 +14,7 @@ const About: NextPage = () => {
       <PageDetailShell>
         <PageHeader
           rotateTitle
-          rotateData={['Hello', 'Aangenaam', 'Piacere', 'Enchanté']}
+          rotateData={['Hello,', 'Aangenaam,', 'Piacere,', 'Enchanté,']}
         >
           <p>
             My name is Leandro Argentiero, and I like to build stuff for the
