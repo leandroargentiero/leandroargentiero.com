@@ -61,7 +61,7 @@ const About: NextPage = () => {
               <figure className="relative z-0 overflow-hidden rounded-lg">
                 <Image
                   className="object-cover"
-                  src="/assets/bottomturn.jpg"
+                  src="/static/bottomturn.jpg"
                   layout="responsive"
                   width={700}
                   height={475}
