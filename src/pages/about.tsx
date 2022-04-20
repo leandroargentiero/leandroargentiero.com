@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 
 import { PageDetailShell, Section } from '@/components/Layout';
 import { Container } from '@/components/Layout';
@@ -9,6 +10,7 @@ import Photography from '@/sections/About/Photography';
 const About: NextPage = () => {
   return (
     <>
+      <NextSeo title="About" />
       <PageDetailShell>
         <PageHeader
           rotateTitle
