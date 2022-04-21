@@ -18,9 +18,9 @@ export const WhatICanDo = () => {
       </Container>
       <Marquees />
       <div className="-mt-4 text-center">
-        <Link href="/about" passHref>
-          <Button>Read more about me</Button>
-        </Link>
+        <Button href="/about" NextLink>
+          Read more about me
+        </Button>
       </div>
     </Section>
   );
