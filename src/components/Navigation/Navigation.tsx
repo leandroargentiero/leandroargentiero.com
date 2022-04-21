@@ -17,7 +17,7 @@ export const Navigation = () => (
       variants={navList}
       initial="hidden"
       animate="show"
-      className="flex list-none flex-row items-center justify-center gap-2 rounded-full border border-black/5 bg-gray-100/50 py-2 px-4 backdrop-blur-[3px] dark:border-white/10 dark:bg-gray-900/40"
+      className="ml-0 flex list-none flex-row items-center justify-center gap-2 rounded-full border border-black/5 bg-gray-100/50 py-2 px-4 backdrop-blur-[3px] dark:border-white/10 dark:bg-gray-900/40"
     >
       <NavItem text="Home" path="/" />
       <NavItem text="About" path="/about" />

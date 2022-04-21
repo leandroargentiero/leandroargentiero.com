@@ -11,6 +11,7 @@
     "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
+    "@radix-ui/react-tooltip": "^0.1.7",
     "classnames": "^2.3.1",
     "contentlayer": "^0.2.2",
     "framer-motion": "^6.2.9",
