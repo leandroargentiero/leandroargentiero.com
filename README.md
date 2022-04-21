@@ -6,6 +6,7 @@
 - **Type Checking**: [Typescript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **UI Components**: [Radix UI](https://www.radix-ui.com/)
 - **Content**: [MDX with ContentLayer](https://www.contentlayer.dev/)
 - **Data Fetching**: [SWR](https://planetscale.com)
 - **Deployment**: [Vercel](https://vercel.com)
