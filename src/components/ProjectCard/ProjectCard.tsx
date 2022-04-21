@@ -16,7 +16,7 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <Link href={href} passHref>
-      <a className="group overflow-hidden rounded-2xl md:even:-translate-y-1/3">
+      <a className="group overflow-hidden rounded-2xl no-underline md:even:-translate-y-1/3">
         <figure
           role="listitem"
           className="relative h-[15rem] w-full lg:h-[20rem] xl:h-[25rem]"
