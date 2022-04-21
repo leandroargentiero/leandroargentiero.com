@@ -18,7 +18,9 @@ export const Tooltip = ({
         side={side}
         align="center"
         {...props}
-        className="-translate-y-1 rounded bg-gray-700 py-1 px-2 text-xs text-gray-100"
+        className={`${
+          side === 'top' ? '-translate-y-1' : 'translate-y-1'
+        } rounded bg-gray-700 py-1 px-2 text-xs text-gray-100`}
       >
         {content}
       </TooltipPrimitive.Content>
