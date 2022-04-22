@@ -11,7 +11,7 @@ export const Logo = ({ ...props }) => {
 
   return (
     <Link href="/" passHref>
-      <a>
+      <a aria-label="Logo">
         <svg
           width={79}
           height={16}

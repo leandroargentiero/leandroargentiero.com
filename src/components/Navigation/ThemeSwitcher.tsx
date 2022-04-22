@@ -26,7 +26,7 @@ export const ThemeSwitcher = () => {
 
   return (
     <Tooltip content="Toggle theme" side="top">
-      <motion.a
+      <motion.div
         onClick={() => {
           setTheme(theme === 'light' ? 'dark' : 'light');
           play();
@@ -42,7 +42,7 @@ export const ThemeSwitcher = () => {
         >
           {renderIcon()}
         </motion.li>
-      </motion.a>
+      </motion.div>
     </Tooltip>
   );
 };
