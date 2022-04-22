@@ -1,6 +1,8 @@
 const { withContentlayer } = require('next-contentlayer');
 
 module.exports = withContentlayer({
-  // Your Next.js config...
   reactStrictMode: true,
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
 });
