@@ -3,17 +3,13 @@ import { motion } from 'framer-motion';
 
 import { sectionParent, sectionTitle } from './sectionIntroVariants';
 
-declare interface SectionIntroProps {
+interface ISectionIntro {
   title: string;
   children?: React.ReactNode;
   alignment: 'left' | 'center';
 }
 
-export const SectionIntro = ({
-  title,
-  children,
-  alignment,
-}: SectionIntroProps) => {
+export const SectionIntro = ({ title, children, alignment }: ISectionIntro) => {
   return (
     <motion.div
       variants={sectionParent}

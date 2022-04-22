@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import classNames from 'classnames';
 
-declare interface NavButtonProps {
+interface INavButton {
   path: string;
   text: string;
 }
 
-export const NavItem = ({ path, text }: NavButtonProps) => {
+export const NavItem = ({ path, text }: INavButton) => {
   const [active, setActive] = useState(false);
   const { pathname } = useRouter();
 

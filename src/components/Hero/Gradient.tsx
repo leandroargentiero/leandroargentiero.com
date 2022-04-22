@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from 'react';
 import { TWallpaper, TWallpaperOptions } from 'twallpaper';
 import 'twallpaper/dist/twallpaper.css';
 
-declare interface GradientProps {
+interface IGradient {
   colors: string[];
   tails: number;
 }
 
-export const Gradient = ({ colors, tails }: GradientProps): JSX.Element => {
+export const Gradient = ({ colors, tails }: IGradient): JSX.Element => {
   const [color1, color2, color3, color4] = colors;
   const containerRef = useRef<HTMLDivElement>(null);
   const [options] = useState<TWallpaperOptions>({

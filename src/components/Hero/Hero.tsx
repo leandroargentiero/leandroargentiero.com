@@ -38,14 +38,14 @@ export const Hero = () => (
         </motion.header>
         <div className="absolute top-0 left-0 grid h-full w-full place-content-center">
           <div className="flex flex-col items-center font-display text-gray-900">
-            <motion.h2
+            <motion.h1
               initial="initial"
               animate="end"
               variants={fadeInY(0.5, '-1rem', '0rem')}
               className="mb-4"
             >
               Hi, I&apos;m Leandro
-            </motion.h2>
+            </motion.h1>
             <h1 className="relative flex max-w-2xl flex-col text-center text-5xl font-semibold leading-[2.8rem] sm:text-7xl sm:leading-[4rem] lg:text-8xl lg:leading-[5rem]">
               <motion.span
                 initial="initial"
@@ -72,7 +72,7 @@ export const Hero = () => (
                 {'& designer'}
               </motion.span>
             </h1>
-            <motion.h3
+            <motion.h2
               initial="initial"
               animate="end"
               variants={fadeInY(0.5, '1.2rem', '0rem')}
@@ -80,7 +80,7 @@ export const Hero = () => (
             >
               I craft digital solutions for human problems <br /> that look good
               and work well.
-            </motion.h3>
+            </motion.h2>
           </div>
         </div>
       </div>

@@ -1,12 +1,9 @@
-declare interface IFooterListProps {
+interface IFooterList {
   title: string;
   children: React.ReactNode;
 }
 
-export const FooterList = ({
-  title,
-  children,
-}: IFooterListProps): JSX.Element => {
+export const FooterList = ({ title, children }: IFooterList): JSX.Element => {
   return (
     <div>
       <h6 className="font-display text-sm text-gray-800 dark:text-gray-100">

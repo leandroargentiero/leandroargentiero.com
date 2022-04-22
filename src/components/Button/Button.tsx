@@ -1,9 +1,8 @@
-import { forwardRef } from 'react';
 import classNames from 'classnames';
 import { FiChevronRight } from 'react-icons/fi';
 import Link from 'next/link';
 
-declare interface ButtonProps {
+interface IButton {
   children: string;
   isFullWidth?: boolean;
   href: string;
@@ -18,7 +17,7 @@ export const Button = ({
   target,
   NextLink,
   ...props
-}: ButtonProps) => (
+}: IButton) => (
   <>
     {NextLink ? (
       <Link href={href} passHref>
