@@ -13,7 +13,7 @@ export const Navigation = () => (
       'fixed left-1/2 bottom-8 z-20 w-full translate-x-[-50%] md:bottom-8'
     }
   >
-    <motion.ul
+    <motion.div
       variants={navList}
       initial="hidden"
       animate="show"
@@ -25,6 +25,6 @@ export const Navigation = () => (
         <hr className="h-full border-l border-black/5 dark:border-white/10" />
       </div>
       <ThemeSwitcher />
-    </motion.ul>
+    </motion.div>
   </motion.nav>
 );

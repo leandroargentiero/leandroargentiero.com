@@ -7,11 +7,17 @@ interface IProjectMetaInfo {
 }
 
 export const ProjectMetaInfo = ({ project }: IProjectMetaInfo) => (
-  <div className="my-8 flex flex-col gap-y-4 md:my-16 md:flex-row md:gap-x-40">
+  <div className="my-8 grid grid-cols-2 grid-rows-2 gap-4 md:grid-cols-4 md:grid-rows-1 md:justify-between md:gap-8">
+    {project.role && <ProjectMetaInfoItem label="Role" value={project.role} />}
     {project.company && (
       <ProjectMetaInfoItem label="Company" value={project.company} />
     )}
-    {project.role && <ProjectMetaInfoItem label="Role" value={project.role} />}
     {project.year && <ProjectMetaInfoItem label="Year" value={project.year} />}
+    {project.readingTime && (
+      <ProjectMetaInfoItem
+        label="Reading time"
+        value={project.readingTime.text}
+      />
+    )}
   </div>
 );

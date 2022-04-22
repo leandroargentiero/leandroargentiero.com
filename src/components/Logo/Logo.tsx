@@ -11,7 +11,7 @@ export const Logo = ({ ...props }) => {
 
   return (
     <Link href="/" passHref>
-      <a>
+      <a aria-label="Logo">
         <svg
           width={79}
           height={16}
@@ -27,7 +27,7 @@ export const Logo = ({ ...props }) => {
               fill={
                 currentPath !== '/' && currentTheme === 'dark'
                   ? '#ffffff'
-                  : '#222'
+                  : '#222222'
               }
             />
           </g>

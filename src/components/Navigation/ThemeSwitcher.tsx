@@ -26,7 +26,7 @@ export const ThemeSwitcher = () => {
 
   return (
     <Tooltip content="Toggle theme" side="top">
-      <motion.a
+      <motion.div
         onClick={() => {
           setTheme(theme === 'light' ? 'dark' : 'light');
           play();
@@ -34,15 +34,15 @@ export const ThemeSwitcher = () => {
         initial="initial"
         whileHover="hover"
         animate="initial"
-        className="rounded-full border border-black/5 bg-gray-50 p-3 hover:cursor-pointer hover:border-black/30 dark:border-white/10 dark:bg-gray-900 dark:hover:border-white/40"
+        className="rounded-full border border-black/5 bg-gray-50 p-3 font-display text-sm text-gray-800 hover:cursor-pointer hover:border-black/30 dark:border-white/10 dark:bg-gray-900 dark:text-gray-300 dark:hover:border-white/40"
       >
-        <motion.li
+        <motion.div
           variants={rotateMotion}
           className="font-display text-sm text-gray-800 dark:text-gray-300"
         >
           {renderIcon()}
-        </motion.li>
-      </motion.a>
+        </motion.div>
+      </motion.div>
     </Tooltip>
   );
 };
