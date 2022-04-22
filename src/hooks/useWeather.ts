@@ -1,11 +1,11 @@
-import useSWR from "swr";
+import useSWR from 'swr';
 
-import { HOMETOWN_LAT, HOMETOWN_LON } from "@/constants/coordinates";
-import { fetcher } from "./fetcher";
+import { HOMETOWN_LAT, HOMETOWN_LON } from '@/constants/coordinates';
+import { fetcher } from './fetcher';
 
 export const useGetWeather = (city: string) => {
   if (!city) {
-    throw new Error("City name is required");
+    throw new Error('City name is required');
   }
 
   const { data, error } = useSWR(
@@ -14,38 +14,38 @@ export const useGetWeather = (city: string) => {
   );
 
   const temp = Math.round(data?.main?.temp);
-  const currentWeather = data?.weather[0]?.main;
-  const icon = mapWeatherToIconName(currentWeather);
+  const currentWeather = data?.weather[0];
+  const icon = mapWeatherToIconName(currentWeather?.main);
 
-  return { city, temp, icon, error };
+  return { city, temp, icon, currentWeather };
 };
 
 // maps to naming of the feather icon set
 const mapWeatherToIconName = (weather: string) => {
   switch (weather) {
     // group 2xx
-    case "Thunderstorm":
-      return "FiCloudLightning";
+    case 'Thunderstorm':
+      return 'FiCloudLightning';
     // group 3xx
-    case "Drizzle":
-      return "FiCloudDrizzle";
+    case 'Drizzle':
+      return 'FiCloudDrizzle';
     // group 5xx
-    case "Rain":
-      return "FiCloudRain";
+    case 'Rain':
+      return 'FiCloudRain';
     // group 6xx
-    case "Snow":
-      return "FiCloudSnow";
+    case 'Snow':
+      return 'FiCloudSnow';
     // group 7xx
-    case "Mist":
-      return "FiCloud";
+    case 'Mist':
+      return 'FiCloud';
     // group 7xx
-    case "Fog":
-      return "FiCloud";
+    case 'Fog':
+      return 'FiCloud';
     // group 8xx
-    case "Clouds":
-      return "FiCloud";
+    case 'Clouds':
+      return 'FiCloud';
     // group 8xx
     default:
-      return "FiSun";
+      return 'FiSun';
   }
 };

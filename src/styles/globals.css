@@ -10,6 +10,14 @@
     @apply min-h-screen;
   }
 
+  a {
+    @apply underline hover:no-underline;
+  }
+
+  ul {
+    @apply ml-10 list-disc;
+  }
+
   ::selection {
     @apply bg-pastel-pink text-gray-900;
   }

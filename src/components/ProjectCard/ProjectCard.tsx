@@ -1,22 +1,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-declare interface ProjectCardProps {
+interface IProjectCard {
   href: string;
   label: string;
   title: string;
   imageSrc: string;
 }
 
-export const ProjectCard = ({
-  href,
-  label,
-  title,
-  imageSrc,
-}: ProjectCardProps) => {
+export const ProjectCard = ({ href, label, title, imageSrc }: IProjectCard) => {
   return (
     <Link href={href} passHref>
-      <a className="group overflow-hidden rounded-2xl md:even:-translate-y-1/3">
+      <a className="group overflow-hidden rounded-2xl no-underline md:even:-translate-y-1/3">
         <figure
           role="listitem"
           className="relative h-[15rem] w-full lg:h-[20rem] xl:h-[25rem]"

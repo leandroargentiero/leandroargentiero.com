@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 
 import { PageDetailShell, Section } from '@/components/Layout';
 import { Container } from '@/components/Layout';
@@ -9,10 +10,11 @@ import Photography from '@/sections/About/Photography';
 const About: NextPage = () => {
   return (
     <>
+      <NextSeo title="About" />
       <PageDetailShell>
         <PageHeader
           rotateTitle
-          rotateData={['Hello', 'Aangenaam', 'Piacere', 'Enchanté']}
+          rotateData={['Hello,', 'Aangenaam,', 'Piacere,', 'Enchanté,']}
         >
           <p>
             My name is Leandro Argentiero, and I like to build stuff for the
@@ -59,7 +61,7 @@ const About: NextPage = () => {
               <figure className="relative z-0 overflow-hidden rounded-lg">
                 <Image
                   className="object-cover"
-                  src="/assets/bottomturn.jpg"
+                  src="/static/bottomturn.jpg"
                   layout="responsive"
                   width={700}
                   height={475}

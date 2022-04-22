@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import { allProjects } from '.contentlayer/generated';
 import type { Project } from '.contentlayer/generated/types';
@@ -13,15 +14,29 @@ export default function Project({ project }: { project: Project }) {
   const Component = useMDXComponent(project.body.code);
 
   return (
-    <PageDetailShell>
-      <PageHeader title={project.title} summary={project.description}>
-        <ProjectMetaInfo project={project} />
-      </PageHeader>
-      <ProjectCover cover={project.cover} />
-      <ProjectBody>
-        <Component components={MDXComponents} />
-      </ProjectBody>
-    </PageDetailShell>
+    <>
+      <NextSeo
+        title={project.title}
+        description={project.description}
+        openGraph={{
+          url: `https://www.leandroargentiero.com/projects/${project.slug}`,
+          images: [
+            {
+              url: `https://www.leandroargentiero.com${project.cover}`,
+            },
+          ],
+        }}
+      />
+      <PageDetailShell>
+        <PageHeader title={project.title} summary={project.description}>
+          <ProjectMetaInfo project={project} />
+        </PageHeader>
+        <ProjectCover cover={project.cover} />
+        <ProjectBody>
+          <Component components={MDXComponents} />
+        </ProjectBody>
+      </PageDetailShell>
+    </>
   );
 }
 

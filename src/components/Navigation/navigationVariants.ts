@@ -24,3 +24,12 @@ export const navList = {
     },
   },
 };
+
+export const rotateMotion = {
+  initial: {
+    rotate: '0deg',
+  },
+  hover: {
+    rotate: '45deg',
+  },
+};

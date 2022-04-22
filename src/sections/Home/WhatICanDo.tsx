@@ -3,6 +3,7 @@ import { Container } from '@/components/Layout';
 import { SectionIntro } from '@/components/SectionIntro';
 import { Marquees } from '@/components/Marquees';
 import { Button } from '@/components/Button';
+import Link from 'next/link';
 
 export const WhatICanDo = () => {
   return (
@@ -17,7 +18,9 @@ export const WhatICanDo = () => {
       </Container>
       <Marquees />
       <div className="-mt-4 text-center">
-        <Button>Read more about me</Button>
+        <Button href="/about" NextLink>
+          Read more about me
+        </Button>
       </div>
     </Section>
   );

@@ -16,14 +16,19 @@ export const FooterItem = ({
   if (asNextLink)
     return (
       <Link href={href!} passHref>
-        <a className="hover:underline">{children}</a>
+        <a className="no-underline hover:underline">{children}</a>
       </Link>
     );
 
   if (asLink)
     return (
-      <li className="hover:underline">
-        <a href={href} target="_blank" rel="noreferrer">
+      <li>
+        <a
+          href={href}
+          target="_blank"
+          rel="noreferrer"
+          className="no-underline hover:underline"
+        >
           {children}
         </a>
       </li>
