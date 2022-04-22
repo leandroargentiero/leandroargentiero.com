@@ -27,7 +27,7 @@ export const Logo = ({ ...props }) => {
               fill={
                 currentPath !== '/' && currentTheme === 'dark'
                   ? '#ffffff'
-                  : '#222'
+                  : '#222222'
               }
             />
           </g>

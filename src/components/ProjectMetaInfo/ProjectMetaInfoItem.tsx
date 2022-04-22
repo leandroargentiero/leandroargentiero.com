@@ -1,5 +1,5 @@
 interface ProjectMetaInfoItem {
-  label: 'Company' | 'Role' | 'Year';
+  label: 'Company' | 'Role' | 'Year' | 'Reading time';
   value: any;
 }
 
