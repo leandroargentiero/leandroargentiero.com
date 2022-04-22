@@ -11,11 +11,11 @@ interface IProjectCard {
 export const ProjectCard = ({ href, label, title, imageSrc }: IProjectCard) => {
   return (
     <Link href={href} passHref>
-      <a className="group overflow-hidden rounded-2xl no-underline md:even:-translate-y-1/3">
-        <figure
-          role="listitem"
-          className="relative h-[15rem] w-full lg:h-[20rem] xl:h-[25rem]"
-        >
+      <a
+        className="group overflow-hidden rounded-2xl no-underline md:even:-translate-y-1/3"
+        role="listitem"
+      >
+        <figure className="relative h-[15rem] w-full lg:h-[20rem] xl:h-[25rem]">
           <Image
             className="object-cover transition duration-300 ease-in-out group-hover:scale-105"
             src={imageSrc}

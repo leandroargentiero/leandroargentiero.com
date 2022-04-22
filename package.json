@@ -26,6 +26,7 @@
     "react-icons": "^4.3.1",
     "react-text-rotate": "^0.2.5",
     "reading-time": "^1.5.0",
+    "sharp": "^0.30.4",
     "swr": "^1.2.2",
     "twallpaper": "^1.0.1",
     "use-sound": "^4.0.1"
