@@ -17,7 +17,6 @@ export default function Project({ project }: { project: Project }) {
     <>
       <NextSeo
         title={project.title}
-        description={project.description}
         openGraph={{
           url: `https://www.leandroargentiero.com/projects/${project.slug}`,
           images: [
@@ -28,7 +27,7 @@ export default function Project({ project }: { project: Project }) {
         }}
       />
       <PageDetailShell>
-        <PageHeader title={project.title} summary={project.description}>
+        <PageHeader title={project.title}>
           <ProjectMetaInfo project={project} />
         </PageHeader>
         <ProjectCover cover={project.cover} />
