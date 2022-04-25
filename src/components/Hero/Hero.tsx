@@ -42,7 +42,7 @@ export const Hero = () => (
               initial="initial"
               animate="end"
               variants={fadeInY(0.5, '-1rem', '0rem')}
-              className="mb-4"
+              className="mb-2 text-sm md:mb-4"
             >
               Hi, I&apos;m Leandro
             </motion.h1>
@@ -59,7 +59,7 @@ export const Hero = () => (
                 initial="initial"
                 animate="end"
                 variants={fadeInX(0.5, '-2.5rem', '0rem', 0.2)}
-                className="ml-24"
+                className="ml-20 md:ml-24"
               >
                 developer
               </motion.span>
@@ -76,7 +76,7 @@ export const Hero = () => (
               initial="initial"
               animate="end"
               variants={fadeInY(0.5, '1.2rem', '0rem')}
-              className="mt-8 text-center"
+              className="mt-4 text-center text-sm md:mt-8 md:text-base"
             >
               I craft digital solutions for human problems <br /> that look good
               and work well.
