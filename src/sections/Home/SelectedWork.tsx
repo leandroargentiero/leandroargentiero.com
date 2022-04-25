@@ -12,7 +12,7 @@ export const SelectedWork = () => {
         </SectionIntro>
         <div
           role="list"
-          className="my-12 grid grid-flow-row grid-cols-1 gap-8 md:grid-cols-2 lg:my-32 lg:gap-16 xl:gap-48"
+          className="my-12 grid grid-flow-row grid-cols-1 gap-10 md:grid-cols-2 lg:my-32 lg:gap-16 xl:gap-48"
         >
           <ProjectCard
             href="/projects/chameleon-design-system"

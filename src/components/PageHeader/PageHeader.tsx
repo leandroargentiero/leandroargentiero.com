@@ -15,7 +15,7 @@ export const PageHeader = ({
   title,
 }: IPageHeader) => (
   <header className="mt-24 max-w-6xl px-4 lg:mt-32  lg:pl-44">
-    <h1 className="mb-6 font-display text-3xl text-gray-900 dark:text-gray-50 md:text-5xl md:leading-tight">
+    <h1 className="mb-6 font-display text-2xl text-gray-900 dark:text-gray-50 md:text-5xl md:leading-tight">
       {rotateTitle ? (
         <div className="h-8 md:h-14">
           <ReactTextRotate texts={rotateData} speed={1.5} period={1000} />

@@ -31,7 +31,7 @@ export const Hero = () => (
           initial="initial"
           animate="end"
           variants={fadeInY(0.5, '-1rem', '0rem')}
-          className="relative z-10 flex flex-row justify-between p-8"
+          className="relative z-10 flex flex-row justify-between p-6 sm:p-8"
         >
           <Logo />
           <WeatherStats cityName="antwerp" />
@@ -42,7 +42,7 @@ export const Hero = () => (
               initial="initial"
               animate="end"
               variants={fadeInY(0.5, '-1rem', '0rem')}
-              className="mb-2 text-sm md:mb-4"
+              className="mb-2 text-sm sm:text-base md:mb-4"
             >
               Hi, I&apos;m Leandro
             </motion.h1>
@@ -76,7 +76,7 @@ export const Hero = () => (
               initial="initial"
               animate="end"
               variants={fadeInY(0.5, '1.2rem', '0rem')}
-              className="mt-4 text-center text-sm md:mt-8 md:text-base"
+              className="mt-4 px-4 text-center text-sm sm:text-base md:mt-8"
             >
               I craft digital solutions for human problems <br /> that look good
               and work well.
