@@ -24,7 +24,7 @@ export const Hero = () => (
       initial="initial"
       animate="end"
       variants={containerBorderRadius}
-      className="relative h-full w-full overflow-hidden rounded-3xl bg-pastel-pink md:h-full"
+      className="relative h-full w-full overflow-hidden rounded-2xl bg-pastel-pink md:h-full"
     >
       <div className="absolute top-0 left-0 z-20 h-full w-full">
         <motion.header
@@ -46,7 +46,7 @@ export const Hero = () => (
             >
               Hi, I&apos;m Leandro
             </motion.h1>
-            <h1 className="relative flex max-w-2xl flex-col text-center text-5xl font-semibold leading-[2.8rem] sm:text-7xl sm:leading-[4rem] lg:text-8xl lg:leading-[5rem]">
+            <h1 className="relative flex max-w-2xl flex-col text-center text-5xl font-semibold leading-[2.8rem] tracking-tight sm:text-7xl sm:leading-[4rem] lg:text-8xl lg:leading-[5rem]">
               <motion.span
                 initial="initial"
                 animate="end"

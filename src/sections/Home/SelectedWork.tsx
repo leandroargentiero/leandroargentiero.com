@@ -1,13 +1,15 @@
 import { Container, Section } from '@/components/Layout';
 import { SectionIntro } from '@/components/SectionIntro';
 import { ProjectCard } from '@/components/ProjectCard';
-import { Button } from '@/components/Button';
 
 export const SelectedWork = () => {
   return (
     <Section>
       <Container>
-        <SectionIntro title="Selected work" alignment="left" />
+        <SectionIntro title="Selected work" alignment="left">
+          A selection of a few projects I personally, or together with others,
+          have worked on.
+        </SectionIntro>
         <div
           role="list"
           className="my-12 grid grid-flow-row grid-cols-1 gap-8 md:grid-cols-2 lg:my-32 lg:gap-16 xl:gap-48"
@@ -28,7 +30,7 @@ export const SelectedWork = () => {
           <ProjectCard
             href="/projects/pizza-point"
             label="personal project"
-            title="A tool that helps me calculating the recipe for the perfect pizza dough"
+            title="A tool that helps me calculate the recipe for the perfect pizza dough"
             imageSrc="/static/projects/pizzapoint/cover.jpg"
           />
           <ProjectCard

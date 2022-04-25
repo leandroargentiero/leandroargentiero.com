@@ -9,11 +9,8 @@ export const FooterCta = () => (
         connect.
       </p>
     </div>
-    <a
-      href="#"
-      className="font-display text-xl text-gray-700 underline hover:no-underline dark:text-white/70 lg:text-xl"
-    >
+    <p className="font-display text-xl text-gray-700 dark:text-white/70 lg:text-xl">
       ciao@leandroargentiero.com
-    </a>
+    </p>
   </div>
 );

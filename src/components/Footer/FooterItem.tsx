@@ -15,9 +15,11 @@ export const FooterItem = ({
 }: IFooterItemProps): JSX.Element => {
   if (asNextLink)
     return (
-      <Link href={href!} passHref>
-        <a className="no-underline hover:underline">{children}</a>
-      </Link>
+      <li>
+        <Link href={href!} passHref>
+          <a className="no-underline hover:underline">{children}</a>
+        </Link>
+      </li>
     );
 
   if (asLink)

@@ -13,7 +13,7 @@ export const UnsplahStatCard = ({ label, value }: IUnsplashStatCard) => {
       <a
         href="https://unsplash.com/@leaero"
         target="_blank"
-        className="font-body text-sm text-gray-400 hover:underline md:text-base"
+        className="font-body text-sm text-gray-400 no-underline hover:underline"
         rel="noreferrer"
       >
         {label}
@@ -35,11 +35,11 @@ export const UnsplashStats = () => {
   return (
     <div className="mx-auto my-5 flex max-w-xl flex-row justify-between gap-2 md:my-12 md:gap-8">
       <UnsplahStatCard
-        label="Unsplash Views"
+        label="Unsplash views"
         value={data ? data?.views.total.toLocaleString('fr-FR') : '-'}
       />
       <UnsplahStatCard
-        label="Unsplash Downloads"
+        label="Unsplash downloads"
         value={data ? data?.downloads.total.toLocaleString('fr-FR') : '-'}
       />
     </div>

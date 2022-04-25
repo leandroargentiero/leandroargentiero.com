@@ -34,7 +34,7 @@ export const Button = ({
         </button>
       </Link>
     ) : (
-      <a href={href} target="_blank" rel="noreferrer">
+      <a href={href} target="_blank" rel="noreferrer" className="no-underline">
         <button
           type="button"
           className={classNames(

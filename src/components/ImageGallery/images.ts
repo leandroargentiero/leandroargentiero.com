@@ -47,21 +47,21 @@ export const images = [
     width: 700, // portrait
     height: 875,
     location: 'Lanzarote',
-    description: 'Local kid playing with a stick',
+    description: 'Beachfront basketball court',
   },
   {
     src: senegal3,
     width: 700, // portrait
     height: 875,
     location: 'Senegal',
-    description: 'Inside the House of Slaves',
+    description: 'Senegalese colour palette',
   },
   {
     src: portgal5,
     width: 700, // landscape
     height: 466,
     location: 'Algarve',
-    description: 'Wetsuits drying in the sun',
+    description: 'Sunsets and drying wetsuits',
   },
   {
     src: lanzarote6,
@@ -82,7 +82,7 @@ export const images = [
     width: 700, // landscape
     height: 466,
     location: 'Indonesia',
-    description: 'Sunset views over Mount Agung',
+    description: 'Morning glory',
   },
   {
     src: senegal5,

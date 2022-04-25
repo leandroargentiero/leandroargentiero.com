@@ -18,41 +18,42 @@ const About: NextPage = () => {
         >
           <p>
             My name is Leandro Argentiero, and I like to build stuff for the
-            internet. After studying communicationsmanagement and afterwards
-            design&development in college, I started my career as a developer.
-            Over the years, I&apos;ve worked at a startup, an advertising
-            agency, a consultancy firm, one of Belgium&apos;s largest media
-            companies, and a private bank. During this time, I&apos;ve had the
-            privilege to work alongside very talented designers, senior
-            developers, and product managers who have raised my standards for
-            what&apos;s expected of any web solution.
+            internet. After getting my bachelor&apos;s degrees in communications
+            management and design & development, I&apos;ve worked as a frontend
+            developer and UX/UI Designer at a startup, an advertising agency, a
+            consultancy firm, one of Belgium&apos;s largest media companies, and
+            a private bank. During these experiences, I&apos;ve had the
+            privilege to work alongside very talented designers, developers, and
+            product managers who showed me to be a lifelong learner and have
+            raised my standards for what&apos;s expected of any web solution.
           </p>
+          <h3 className="mt-2 text-xl text-gray-900 dark:text-gray-100">
+            Being a hybrid profile
+          </h3>
           <p>
-            Today my main focus is developing solutions for human problems that
-            look good and work well. My preferred technology stack is
-            <span className="font-semibold text-gray-800 dark:text-gray-300">
-              {' '}
-              Javascript (ES6+), React, Next.js, TailwindCSS, Chakra UI, and
-              recently I&apos;ve been dabbling with Typescript
-            </span>
-            . In 2021 I enrolled in a full-stack course from the University of
-            Helsinki to get a better grasp of the backend side, where I gained a
-            practical understanding of Node.js and REST API&apos;s.
+            I consider myself a hybrid profile, a bridge between design and
+            code, that feels at home in both Figma and VS Code. But today, I
+            like to focus more on the technical side of product design. The
+            weapons of choice I currently prefer:
           </p>
+          <ul className="ml-4 list-inside">
+            <li>Javascript (ES6)</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>TailwindCSS</li>
+            <li>Chakra UI</li>
+            <li>And recently I&apos;ve been dabbling with Typescript</li>
+          </ul>
+          <h3 className="mt-2 text-xl text-gray-900 dark:text-gray-100">
+            {' '}
+            When I&apos;m not tinkering around on my computer
+          </h3>
           <p>
-            I also recently launched a premium extra virgin olive oil product
-            that is an homage to my Italian family&apos;s olive oil-producing
-            tradition.
-          </p>
-          <p>
-            When I&apos;m not tinkering around on my computer, you can probably
-            find me outside in nature. Since I was a little kid, I&apos;ve
-            always loved sports that involved some kind of board. Starting with
-            skateboarding, snowboarding and eventually surfing. The latter is
+            Since I was a little kid, I&apos;ve always loved sports that
+            involved some kind of board. What started with skateboarding and
+            snowboarding eventually brought me to surfing. The latter is
             currently my biggest passion, and it led me to travel to different
             places around the world to surf waves and discover other cultures.
-            During these trips I like to keep a visual diary by capturing the
-            beauty of the world with my Fujifilm camera.
           </p>
         </PageHeader>
         <Section className="pt-8 md:pt-16">
@@ -71,7 +72,7 @@ const About: NextPage = () => {
                 />
               </figure>
               <figcaption className="relative p-1 px-1 font-body text-sm text-gray-400 before:mr-1 before:text-pastel-indigo before:content-['•']">
-                That&apos;s me doing a bottom turn in Lombok, Indonesia.
+                Yours truly doing a bottom turn in Lombok, Indonesia.
               </figcaption>
             </div>
           </Container>
