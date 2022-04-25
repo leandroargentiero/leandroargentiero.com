@@ -1,6 +1,7 @@
 import { Container, Section } from '@/components/Layout';
 import { SectionIntro } from '@/components/SectionIntro';
 import { ProjectCard } from '@/components/ProjectCard';
+import { Button } from '@/components/Button';
 
 export const SelectedWork = () => {
   return (
@@ -28,6 +29,12 @@ export const SelectedWork = () => {
             imageSrc="/static/projects/curieuzeneuzen/cover.jpg"
           />
           <ProjectCard
+            href="/projects/my-portfolio-website"
+            label="personal project"
+            title="Portfolio website built with Next.js, Typescript, and TailwindCSS"
+            imageSrc="/static/projects/my-portfolio-website/cover.jpg"
+          />
+          <ProjectCard
             href="/projects/pizza-point"
             label="personal project"
             title="A tool that helps me calculate the recipe for the perfect pizza dough"
@@ -36,13 +43,13 @@ export const SelectedWork = () => {
           <ProjectCard
             href="/projects/portfolio-toon-persyn"
             label="freelance"
-            title="JAMstack portfolio website connected with Prismic for a director of photography"
+            title="JAMstack portfolio website connected with Prismic"
             imageSrc="/static/projects/toonpersyn/cover.jpg"
           />
           <ProjectCard
             href="/projects/polar-experience"
             label="freelance"
-            title="Defining an overaching digital identity for a polar travel company"
+            title="Defining an overarching digital identity for a polar travel company"
             imageSrc="/static/projects/polar-experience/cover.jpg"
           />
           <ProjectCard
@@ -51,6 +58,20 @@ export const SelectedWork = () => {
             title="Building a Covid-19 Realtime Dashboard during lockdown"
             imageSrc="/static/projects/covid19-dashboard/cover.jpg"
           />
+          <div className="grid h-[20rem] w-full place-items-center justify-around rounded-xl bg-pastel-pink md:h-[30rem] md:-translate-y-1/3">
+            <div className="text-center">
+              <h2 className="mb-4 font-display text-xl text-gray-900 md:text-2xl">
+                Your project here?
+              </h2>
+              <Button
+                href="mailto:ciao@leandroargentiero.com"
+                NextLink
+                noDarkMode
+              >
+                Send me an email
+              </Button>
+            </div>
+          </div>
         </div>
       </Container>
     </Section>
