@@ -10,7 +10,7 @@ export const WeatherStats = ({ cityName }: { cityName: string }) => {
 
   return (
     <Tooltip content={currentWeather?.description} side="bottom">
-      <div className="grid grid-flow-col items-center gap-4 font-display text-sm">
+      <div className="grid grid-flow-col items-center gap-4 font-display text-xs  sm:text-sm">
         <span>{city ? city : '-'}</span>
         <span>{temp ? temp : '-'}°C</span>
         {icon && <WeatherIcon />}
