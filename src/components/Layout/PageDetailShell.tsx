@@ -18,7 +18,7 @@ export const PageDetailShell = ({ children }: ISiteShellProps) => {
         <Container>
           <div className="flex flex-row items-center justify-between pb-4 pt-3">
             <Logo />
-            <WeatherStats cityName="antwerp" />
+            <WeatherStats cityName="antwerp" darkMode />
           </div>
         </Container>
       </header>
