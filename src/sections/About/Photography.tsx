@@ -8,7 +8,7 @@ const Photography = () => {
   return (
     <Section>
       <Container>
-        <SectionIntro title="Capturing what I see" alignment="center">
+        <SectionIntro title="Keeping a visual diary" alignment="center">
           During my (surf) trips, I like to keep a visual diary by capturing the
           world&apos;s beauty with my Fujifilm camera. Below you can find some
           shots that I&apos;ve taken over time. <br /> <br />
