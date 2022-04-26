@@ -25,7 +25,7 @@ export const SelectedWork = () => {
           <ProjectCard
             href="/projects/curieuzeneuzen-vlaanderen"
             label="de standaard"
-            title="Mapping Flander's air pollution created by cars."
+            title="Mapping Flanders' air pollution created by cars."
             imageSrc="/static/projects/curieuzeneuzen/cover.jpg"
           />
           <ProjectCard
