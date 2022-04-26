@@ -8,11 +8,13 @@ const Photography = () => {
   return (
     <Section>
       <Container>
-        <SectionIntro title="I also like to take pictures" alignment="center">
+        <SectionIntro title="Capturing what I see" alignment="center">
           During my (surf) trips, I like to keep a visual diary by capturing the
           world&apos;s beauty with my Fujifilm camera. Below you can find some
-          shots that I&apos;ve taken over time. <br />
-          Custom prints are available upon request.
+          shots that I&apos;ve taken over time. <br /> <br />
+          <strong className="italic">
+            Custom prints are available upon request.
+          </strong>
         </SectionIntro>
         <UnsplashStats />
         <ImageGallery />

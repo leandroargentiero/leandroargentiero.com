@@ -19,22 +19,20 @@ const About: NextPage = () => {
           <p>
             My name is Leandro Argentiero, and I like to build stuff for the
             internet. After getting my bachelor&apos;s degrees in communications
-            management and design & development, I&apos;ve worked as a frontend
-            developer and UX/UI Designer at a startup, an advertising agency, a
-            consultancy firm, one of Belgium&apos;s largest media companies, and
-            a private bank. During these experiences, I&apos;ve had the
-            privilege to work alongside very talented designers, developers, and
-            product managers who showed me to be a lifelong learner and have
-            raised my standards for what&apos;s expected of any web solution.
+            management and design & development, I&apos;ve worked on digital
+            products in start-up, agency and corporate environments. I&apos;ve
+            had the privilege to work alongside very talented designers,
+            developers, and product managers who have raised my standards for
+            what&apos;s expected of any web solution.
           </p>
           <h3 className="mt-2 text-xl text-gray-900 dark:text-gray-100">
             Being a hybrid profile
           </h3>
           <p>
-            I consider myself a hybrid profile, a bridge between design and
-            code, that feels at home in both Figma and VS Code. But today, I
-            like to focus more on the technical side of product design. The
-            weapons of choice I currently prefer:
+            I consider myself as a bridge between design and code, who feels at
+            home in both Figma and VS Code. But today, I like to focus more on
+            the technical side of product design. My weapons of choice I
+            currently prefer:
           </p>
           <ul className="ml-4 list-inside">
             <li>Javascript (ES6)</li>
@@ -72,7 +70,7 @@ const About: NextPage = () => {
                 />
               </figure>
               <figcaption className="relative p-1 px-1 font-body text-sm text-gray-400 before:mr-1 before:text-pastel-indigo before:content-['•']">
-                Yours truly doing a bottom turn in Lombok, Indonesia.
+                That&apos;s me doing a bottom turn in Lombok, Indonesia.
               </figcaption>
             </div>
           </Container>

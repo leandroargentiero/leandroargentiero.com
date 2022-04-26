@@ -10,8 +10,8 @@ export const WhatICanDo = () => {
       <Container>
         <SectionIntro title="What I can do for you" alignment="center">
           Over the years, I&apos;ve worked and dabbled with various technologies
-          and design principles. <br /> Due to my experience as both a designer
-          and developer, I&apos;ve gained a solid understanding of the
+          and design principles. <br /> Thanks to my experience as both a
+          designer and developer, I&apos;ve gained a solid understanding of the
           intersection between design and code.
         </SectionIntro>
       </Container>
