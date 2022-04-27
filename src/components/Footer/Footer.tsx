@@ -34,7 +34,7 @@ export const Footer = () => {
                 </FooterItem>
               </FooterList>
               <FooterList title="Sitemap">
-                <FooterItem asNextLink href="/home">
+                <FooterItem asNextLink href="/">
                   Home
                 </FooterItem>
                 <FooterItem asNextLink href="/about">
