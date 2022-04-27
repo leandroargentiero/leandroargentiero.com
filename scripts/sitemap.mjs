@@ -21,7 +21,7 @@ const urlTags = pages
   .map(
     (path) => `
       <url>
-          <loc>www.leandroargentiero.com${path}</loc>
+          <loc>https://leandroargentiero.com${path}</loc>
       </url>
     `
   )
