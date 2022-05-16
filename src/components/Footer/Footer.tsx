@@ -11,11 +11,6 @@ export const Footer = () => {
           <div className="mb-8 grid grid-cols-1 md:mb-12 md:gap-8 lg:grid-cols-2">
             <FooterCta />
             <div className="mt-12 flex flex-col items-start gap-8 sm:flex-row sm:gap-16 lg:mt-0 lg:gap-16 xl:justify-center xl:gap-24">
-              <FooterList title="Personalia">
-                <FooterItem>Leandro Argentiero</FooterItem>
-                <FooterItem>Antwerp, Belgium</FooterItem>
-                <FooterItem>+32 468 19 78 66</FooterItem>
-              </FooterList>
               <FooterList title="Find me on">
                 <FooterItem asLink href="https://github.com/leandroargentiero/">
                   Github
@@ -32,6 +27,11 @@ export const Footer = () => {
                 >
                   Instagram
                 </FooterItem>
+              </FooterList>
+              <FooterList title="Personalia">
+                <FooterItem>Leandro Argentiero</FooterItem>
+                <FooterItem>Antwerp, Belgium</FooterItem>
+                {/* <FooterItem>+32 468 19 78 66</FooterItem> */}
               </FooterList>
               <FooterList title="Sitemap">
                 <FooterItem asNextLink href="/">
