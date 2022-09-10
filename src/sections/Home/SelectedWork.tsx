@@ -17,7 +17,7 @@ export const SelectedWork = () => {
         >
           <ProjectCard
             label="Telenet (case coming soon)"
-            title="Simplifying a telecom provider's back office tasks with a new portal application."
+            title="Simplifying the back office tasks of a telecom provider with a new portal application."
             imageSrc="/static/projects/tadaam/cover.jpg"
           />
           <ProjectCard
