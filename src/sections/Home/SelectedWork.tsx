@@ -16,6 +16,11 @@ export const SelectedWork = () => {
           className="my-12 grid grid-flow-row grid-cols-1 gap-10 md:grid-cols-2 lg:my-32 lg:gap-16 xl:gap-48"
         >
           <ProjectCard
+            label="Telenet (case coming soon)"
+            title="Simplifying a telecom provider's back office tasks with a new portal application."
+            imageSrc="/static/projects/tadaam/cover.jpg"
+          />
+          <ProjectCard
             href="/projects/chameleon-design-system"
             label="mediahuis"
             title="Building a multi-branded design system that ensures design
@@ -58,7 +63,8 @@ export const SelectedWork = () => {
             title="Building a Covid-19 Realtime Dashboard during lockdown"
             imageSrc="/static/projects/covid19-dashboard/cover.jpg"
           />
-          <div className="grid h-[20rem] w-full place-items-center justify-around rounded-xl bg-pastel-pink md:h-[30rem] md:-translate-y-1/3">
+          {/* 
+          <div className="grid h-[20rem] w-full place-items-center justify-around rounded-xl bg-pastel-pink md:h-[30rem] md:col-start-2 md:-translate-y-1/">
             <div className="text-center">
               <h2 className="mb-4 font-display text-xl text-gray-900 md:text-2xl">
                 Your project here?
@@ -71,7 +77,7 @@ export const SelectedWork = () => {
                 Send me an email
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
       </Container>
     </Section>
