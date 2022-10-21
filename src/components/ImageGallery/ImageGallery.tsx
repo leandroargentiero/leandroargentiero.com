@@ -11,6 +11,7 @@ export const ImageGallery = () => {
           <figure key={i} className="break-inside overflow-hidden py-4">
             <div className="group relative h-full w-full overflow-hidden rounded-lg">
               <Image
+                priority
                 className="object-cover"
                 src={image.src}
                 layout="responsive"
