@@ -40,7 +40,7 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
 
 
 export default function Project({ project, prevProject, nextProject }: ProjectPageProps) {
-  const Component = useMDXComponent(project?.body?.code);
+  const MdxContent = useMDXComponent(project?.body?.code);
 
   return (
     <>
@@ -61,7 +61,7 @@ export default function Project({ project, prevProject, nextProject }: ProjectPa
         </PageHeader>
         <ProjectCover cover={project.cover} />
         <ProjectBody>
-          <Component components={MDXComponents} />
+          <MdxContent components={MDXComponents} />
           <NextProject slug={nextProject.slug} company={nextProject.company} cover={nextProject.cover} title={nextProject.title} />
         </ProjectBody>
       </PageDetailShell>

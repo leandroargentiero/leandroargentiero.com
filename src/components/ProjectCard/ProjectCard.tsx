@@ -40,10 +40,8 @@ export const ProjectCard = ({ href, label, title, imageSrc }: ProjectCardProps) 
 
   if (href) {
     return (
-      <Link href={href} passHref>
-        <a className={wrapperStyles}>
-          <ProjectCardContent label={label} title={title} imageSrc={imageSrc} />
-        </a>
+      <Link href={href} className={wrapperStyles} passHref>
+        <ProjectCardContent label={label} title={title} imageSrc={imageSrc} />
       </Link>
     )
   }

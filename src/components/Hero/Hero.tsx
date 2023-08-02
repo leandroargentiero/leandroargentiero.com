@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import 'twallpaper/dist/twallpaper.css';
+// import 'twallpaper/dist/twallpaper.css';
 
 import { WHITE, INDIGO, PINK } from '@/constants/colors';
 import { Logo } from '@/components/Logo';

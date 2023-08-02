@@ -16,7 +16,7 @@ const Photography = () => {
             Custom prints are available upon request.
           </strong>
         </SectionIntro>
-        <UnsplashStats />
+        {/* <UnsplashStats /> */}
         <ImageGallery />
         <div className="my-8 text-center">
           <Button href="https://www.instagram.com/leandroargentiero/">

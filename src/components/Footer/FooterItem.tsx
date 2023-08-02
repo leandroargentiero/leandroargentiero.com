@@ -16,8 +16,8 @@ export const FooterItem = ({
   if (asNextLink)
     return (
       <li>
-        <Link href={href!} passHref>
-          <a className="no-underline hover:underline">{children}</a>
+        <Link href={href!} passHref className="no-underline hover:underline">
+          {children}
         </Link>
       </li>
     );

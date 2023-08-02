@@ -12,18 +12,20 @@ export const Tooltip = ({
   ...props
 }: ITooltip) => {
   return (
-    <TooltipPrimitive.Root delayDuration={0}>
-      <TooltipPrimitive.Trigger asChild>{children}</TooltipPrimitive.Trigger>
-      <TooltipPrimitive.Content
-        side={side}
-        align="center"
-        {...props}
-        className={`${
-          side === 'top' ? '-translate-y-1' : 'translate-y-1'
-        } rounded bg-gray-700 py-1 px-2 text-xs text-gray-100`}
-      >
-        {content}
-      </TooltipPrimitive.Content>
-    </TooltipPrimitive.Root>
+    <TooltipPrimitive.Provider>
+      <TooltipPrimitive.Root delayDuration={0}>
+        <TooltipPrimitive.Trigger asChild>{children}</TooltipPrimitive.Trigger>
+        <TooltipPrimitive.Content
+          side={side}
+          align="center"
+          {...props}
+          className={`${
+            side === 'top' ? '-translate-y-1' : 'translate-y-1'
+          } rounded bg-gray-700 py-1 px-2 text-xs text-gray-100`}
+        >
+          {content}
+        </TooltipPrimitive.Content>
+      </TooltipPrimitive.Root>
+    </TooltipPrimitive.Provider>
   );
 };

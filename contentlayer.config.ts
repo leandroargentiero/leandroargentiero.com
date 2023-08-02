@@ -14,7 +14,7 @@ export const Project = defineDocumentType(() => ({
   fields: {
     title: { type: 'string', required: true },
     company: { type: 'string', required: true },
-    role: { type: 'string', required: true },
+    role: { type: 'list', of: { type: 'string' }, required: true },
     year: { type: 'string', required: true },
     cover: { type: 'string', required: true },
   },

@@ -32,15 +32,17 @@ export const UnsplashStats = () => {
     fetcherWithToken
   );
 
+  console.log({data})
+
   return (
     <div className="mx-auto mt-9 mb-10 flex max-w-xl flex-row justify-between gap-2 md:my-12 md:gap-8">
       <UnsplahStatCard
         label="Unsplash views"
-        value={data ? data?.views.total.toLocaleString('fr-FR') : '-'}
+        value={data ? data?.views?.total?.toLocaleString('fr-FR') : '-'}
       />
       <UnsplahStatCard
         label="Unsplash downloads"
-        value={data ? data?.downloads.total.toLocaleString('fr-FR') : '-'}
+        value={data ? data?.downloads?.total?.toLocaleString('fr-FR') : '-'}
       />
     </div>
   );
