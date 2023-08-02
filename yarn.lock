@@ -951,13 +951,6 @@
     lodash.merge "^4.6.2"
     postcss-selector-parser "6.0.10"
 
-"@twallpaper/react@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@twallpaper/react/-/react-2.1.2.tgz#0560b25cf7555aecca90d054e774b3c23bbfbc1b"
-  integrity sha512-UmltqeIU4tfT8Y/iYhgRyGrKV246FGa8C9/kpR+DNQJV5ekeQs7IvwO+unuOgB3wPcle5hEz+cz7jkfOJoEixg==
-  dependencies:
-    twallpaper "2.1.2"
-
 "@types/acorn@^4.0.0":
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/@types/acorn/-/acorn-4.0.6.tgz#d61ca5480300ac41a7d973dd5b84d0a591154a22"
@@ -5314,10 +5307,10 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
-twallpaper@2.1.2, twallpaper@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/twallpaper/-/twallpaper-2.1.2.tgz#eaa70f6a07d99c870c20bada9580bdf70fc1eb61"
-  integrity sha512-au6EKb5h7PClCrYvv3RwcI5VeqS+Pa3eUoXSRbhkblKtbBI5IF9l4jZbA0V9Gp86KRfi8fIqQpDkzBl+H0Lpaw==
+twallpaper@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/twallpaper/-/twallpaper-1.0.1.tgz#ea0ca0df3e049888aed05f9520d53d71115ecbef"
+  integrity sha512-1O450/GxIy21y7Nvbk6H1iTyLSdLq8OJcWI8vo0IUAFSmdLVITOJdAHAXr9jBBv5uDUaq+1YQCNzMjA+0aN8yA==
 
 typanion@^3.12.1, typanion@^3.8.0:
   version "3.13.0"

@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@radix-ui/react-tooltip": "^1.0.6",
-    "@twallpaper/react": "^2.1.2",
     "classnames": "^2.3.1",
     "contentlayer": "^0.3.4",
     "framer-motion": "^10.15.0",
@@ -29,7 +28,7 @@
     "reading-time": "^1.5.0",
     "sharp": "^0.32.4",
     "swr": "^2.2.0",
-    "twallpaper": "^2.1.2",
+    "twallpaper": "1.0.1",
     "use-sound": "^4.0.1"
   },
   "devDependencies": {

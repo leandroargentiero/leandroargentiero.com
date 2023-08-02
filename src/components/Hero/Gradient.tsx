@@ -1,22 +1,23 @@
 import { useEffect, useRef, useState } from 'react';
-import { TWallpaper, TWallpaperHandlers } from '@twallpaper/react'
-import '@twallpaper/react/css'
+import { TWallpaper, TWallpaperOptions } from 'twallpaper';
+import 'twallpaper/dist/twallpaper.css';
 
 interface IGradient {
   colors: string[];
   tails: number;
 }
 
-export const Gradient = ({ colors }: IGradient): JSX.Element => {
-  const ref = useRef<TWallpaperHandlers>(null);
+export const Gradient = ({ colors, tails }: IGradient): JSX.Element => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [options] = useState<TWallpaperOptions>({
+    tails: 200,
+    colors: [...colors],
+  });
 
-  return (
-    <TWallpaper
-      ref={ref}
-      options={{
-        colors
-      }}
-      className='relative h-full w-full'
-    />
-  )
+  useEffect(() => {
+    const wallpaper = new TWallpaper(containerRef.current, options);
+    wallpaper.updateFrametime(90);
+  }, [options]);
+
+  return <div ref={containerRef} />;
 };
