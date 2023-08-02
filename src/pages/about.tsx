@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { NextSeo } from 'next-seo';
 
 import { PageDetailShell, Section } from '@/components/Layout';
