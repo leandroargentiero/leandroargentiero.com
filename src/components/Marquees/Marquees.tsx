@@ -14,7 +14,7 @@ export const Marquees: React.FC = (): JSX.Element => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="my-16 w-full overflow-hidden whitespace-nowrap text-center font-display text-5xl font-bold	text-gray-300 dark:text-gray-500 md:text-7xl xl:my-32 xl:text-9xl"
+      className="my-16 w-full overflow-hidden whitespace-nowrap text-center font-display text-5xl font-bold	text-gray-300 dark:text-gray-500 md:text-7xl xl:my-32 xl:text-8xl"
     >
       <Marquee
         gradientColor={
@@ -24,7 +24,7 @@ export const Marquees: React.FC = (): JSX.Element => {
         style={{ overflow: 'hidden' }}
       >
         {' '}
-        - HTML5 - CSS3 - JS ES6 - GIT - SCSS
+        - REACT - ES6 - CSS3 - GIT - TYPESCRIPT
       </Marquee>
       <Marquee
         gradientColor={
@@ -35,7 +35,7 @@ export const Marquees: React.FC = (): JSX.Element => {
         direction="right"
       >
         {' '}
-        - TYPESCRIPT - REACT - NEXT.JS - CHAKRA UI - TAILWIND - REDUX
+        - REACT NATIVE - NEXT.JS - CHAKRA UI - TAILWIND - REACT QUERY
       </Marquee>
       <Marquee
         gradientColor={
@@ -45,7 +45,7 @@ export const Marquees: React.FC = (): JSX.Element => {
         style={{ overflow: 'hidden' }}
       >
         {' '}
-        - NODE - REST API - STYLED COMPNENTS - FRAMER MOTION - JEST
+        - NODE - NEST.JS - STYLED COMPNENTS - FRAMER MOTION - JEST
       </Marquee>
       <Marquee
         gradientColor={
@@ -56,7 +56,7 @@ export const Marquees: React.FC = (): JSX.Element => {
         direction="right"
       >
         {' '}
-        - FIGMA - UI DESIGN - UX DESIGN - DESIGN SYSTEMS
+        - UX DESIGN - UI DESIGN - FIGMA - DESIGN SYSTEMS
       </Marquee>
     </motion.div>
   );

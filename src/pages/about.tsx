@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import { NextSeo } from 'next-seo';
 
 import { PageDetailShell, Section } from '@/components/Layout';
@@ -16,43 +16,32 @@ const About: NextPage = () => {
           rotateTitle
           rotateData={['Hello,', 'Aangenaam,', 'Piacere,', 'Enchanté,']}
         >
-          <p>
-            My name is Leandro Argentiero, and I like to build stuff for the
-            internet. After getting my bachelor&apos;s degrees in communications
-            management and design & development, I&apos;ve worked on digital
-            products in start-up, agency and corporate environments. I&apos;ve
-            had the privilege to work alongside very talented designers,
-            developers, and product managers who have raised my standards for
-            what&apos;s expected of any web solution.
-          </p>
-          <h3 className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-            Being a hybrid profile
-          </h3>
-          <p>
-            I consider myself as a bridge between design and code, who feels at
-            home in both Figma and VS Code. But today, I like to focus more on
-            the technical side of product design. My weapons of choice I
-            currently prefer:
-          </p>
-          <ul className="ml-4 list-inside">
-            <li>Javascript (ES6)</li>
-            <li>React</li>
-            <li>Next.js</li>
-            <li>TailwindCSS</li>
-            <li>Chakra UI</li>
-            <li>And recently I&apos;ve been dabbling with Typescript</li>
-          </ul>
-          <h3 className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-            {' '}
-            When I&apos;m not tinkering around on my computer
-          </h3>
-          <p>
-            Since I was a little kid, I&apos;ve always loved sports that
-            involved some kind of board. What started with skateboarding and
-            snowboarding eventually brought me to surfing. The latter is
-            currently my biggest passion, and it led me to travel to different
-            places around the world to surf waves and discover other cultures.
-          </p>
+          <div className="max-w-3xl">
+            <p>
+              My name is Leandro Argentiero, and I like to build stuff for the
+              internet. I&apos;ve worked on digital products in <u>start-up</u>,{' '}
+              <u>agency</u> and <u>corporate</u> environments where I had the
+              privilege to work alongside very talented designers, developers,
+              and product managers who have raised my standards for what&apos;s
+              expected of any web solution.
+            </p>
+            <p>
+              As a designer who finds beauty in code and a developer who values
+              delightful user experiences, my ultimate objective is to develop
+              digital solutions that address human problems while delivering
+              both aesthetically pleasing and seamless working products.
+            </p>
+            <p>
+              When I&apos;m not immersed in the world of technology, you&apos;ll
+              likely find me indulging in my lifelong passion for board sports.
+              From a young age, I&apos;ve been drawn to activities like
+              skateboarding and snowboarding, which eventually paved the way for
+              my love for surfing. Nowadays, surfing has become my passion,
+              motivating me to embark on journeys to various places to ride
+              waves and immerse myself in diverse cultures which let me
+              appreciate the world beyond the screen.
+            </p>
+          </div>
         </PageHeader>
         <Section className="pt-8 md:pt-16">
           <Container>

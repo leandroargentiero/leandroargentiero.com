@@ -11,12 +11,8 @@ const Photography = () => {
         <SectionIntro title="Keeping a visual diary" alignment="center">
           During my (surf) trips, I like to keep a visual diary by capturing the
           world&apos;s beauty with my Fujifilm camera. Below you can find some
-          shots that I&apos;ve taken over time. <br /> <br />
-          <strong className="italic">
-            Custom prints are available upon request.
-          </strong>
+          shots that I&apos;ve taken over time.
         </SectionIntro>
-        {/* <UnsplashStats /> */}
         <ImageGallery />
         <div className="my-8 text-center">
           <Button href="https://www.instagram.com/leandroargentiero/">

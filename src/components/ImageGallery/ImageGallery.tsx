@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import { FiMapPin } from 'react-icons/fi';
 
 import { images } from './images';
@@ -6,7 +6,7 @@ import { images } from './images';
 export const ImageGallery = () => {
   return (
     <>
-      <div className="masonry sm:masonry-sm md:masonry-md">
+      <div className="masonry sm:masonry-sm md:masonry-md mt-10">
         {images.map((image, i) => (
           <figure key={i} className="break-inside overflow-hidden py-4">
             <div className="group relative h-full w-full overflow-hidden rounded-lg">

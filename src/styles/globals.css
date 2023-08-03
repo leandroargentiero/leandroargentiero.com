@@ -21,6 +21,10 @@
   ::selection {
     @apply bg-pastel-pink text-gray-900;
   }
+
+  p {
+    @apply leading-relaxed mb-4;
+  }
 }
 
 @layer utilities {

@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import { NextSeo } from 'next-seo';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import { allProjects } from '.contentlayer/generated';
@@ -14,10 +14,10 @@ import Link from 'next/link';
 import NextProject from '@/components/NextProject';
 
 type ProjectPageProps = {
-  project: Project,
-  prevProject: Project,
-  nextProject: Project,
-}
+  project: Project;
+  prevProject: Project;
+  nextProject: Project;
+};
 
 export async function getStaticPaths() {
   return {
@@ -28,18 +28,21 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }: { params: { slug: string } }) {
   const parsedProjects: ProjectPageProps[] = allProjects.map((project, idx) => {
-    const prevProject = idx === 0 ? allProjects[allProjects.length - 1] : allProjects[idx - 1];
-    const nextProject = idx === allProjects.length - 1 ? allProjects[0] : allProjects[idx + 1];
+    const prevProject =
+      idx === 0 ? allProjects[allProjects.length - 1] : allProjects[idx - 1];
+    const nextProject =
+      idx === allProjects.length - 1 ? allProjects[0] : allProjects[idx + 1];
 
     return { project, prevProject, nextProject };
-  })
-  const { project, nextProject, prevProject } = parsedProjects.find((prj) => prj.project.slug === params.slug) as ProjectPageProps;
+  });
+  const { project, nextProject, prevProject } = parsedProjects.find(
+    (prj) => prj.project.slug === params.slug
+  ) as ProjectPageProps;
 
   return { props: { project, nextProject, prevProject } };
 }
 
-
-export default function Project({ project, prevProject, nextProject }: ProjectPageProps) {
+export default function Project({ project, nextProject }: ProjectPageProps) {
   const MdxContent = useMDXComponent(project?.body?.code);
 
   return (
@@ -62,7 +65,12 @@ export default function Project({ project, prevProject, nextProject }: ProjectPa
         <ProjectCover cover={project.cover} />
         <ProjectBody>
           <MdxContent components={MDXComponents} />
-          <NextProject slug={nextProject.slug} company={nextProject.company} cover={nextProject.cover} title={nextProject.title} />
+          <NextProject
+            slug={nextProject.slug}
+            company={nextProject.company}
+            cover={nextProject.cover}
+            title={nextProject.title}
+          />
         </ProjectBody>
       </PageDetailShell>
     </>

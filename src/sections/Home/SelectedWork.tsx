@@ -1,7 +1,6 @@
 import { Container, Section } from '@/components/Layout';
 import { SectionIntro } from '@/components/SectionIntro';
 import { ProjectCard } from '@/components/ProjectCard';
-import { Button } from '@/components/Button';
 
 export const SelectedWork = () => {
   return (
@@ -13,24 +12,25 @@ export const SelectedWork = () => {
         </SectionIntro>
         <div
           role="list"
-          className="my-12 grid grid-flow-row grid-cols-1 gap-10 md:grid-cols-2 lg:my-32 lg:gap-16 xl:gap-48"
+          className="mt-12 grid grid-flow-row grid-cols-1 gap-10 md:grid-cols-2 lg:mt-32 lg:gap-16 xl:gap-48"
         >
-          <ProjectCard
-            label="Telenet (case coming soon)"
-            title="Simplifying the back office tasks of a telecom provider with a new portal application."
-            imageSrc="/static/projects/tadaam/cover.jpg"
-          />
           <ProjectCard
             href="/projects/chameleon-design-system"
             label="mediahuis"
             title="Building a multi-branded design system that ensures design
-            consistency and development efficiency."
+            consistency and development efficiency"
             imageSrc="/static/projects/chameleon/cover.jpg"
+          />
+          <ProjectCard
+            href="/projects/tadaam"
+            label="Telenet (TADAAM)"
+            title="Rebuilding the entire tech stack for a telco startup"
+            imageSrc="/static/projects/tadaam/cover-tadaam.jpg"
           />
           <ProjectCard
             href="/projects/curieuzeneuzen-vlaanderen"
             label="de standaard"
-            title="Mapping Flanders' air pollution created by cars."
+            title="Mapping Flanders' air pollution created by cars"
             imageSrc="/static/projects/curieuzeneuzen/cover.jpg"
           />
           <ProjectCard
@@ -63,25 +63,8 @@ export const SelectedWork = () => {
             title="Building a Covid-19 Realtime Dashboard during lockdown"
             imageSrc="/static/projects/covid19-dashboard/cover.jpg"
           />
-          {/* 
-          <div className="grid h-[20rem] w-full place-items-center justify-around rounded-xl bg-pastel-pink md:h-[30rem] md:col-start-2 md:-translate-y-1/">
-            <div className="text-center">
-              <h2 className="mb-4 font-display text-xl text-gray-900 md:text-2xl">
-                Your project here?
-              </h2>
-              <Button
-                href="mailto:ciao@leandroargentiero.com"
-                NextLink
-                noDarkMode
-              >
-                Send me an email
-              </Button>
-            </div>
-          </div> */}
         </div>
       </Container>
     </Section>
   );
 };
-
-export default SelectedWork;

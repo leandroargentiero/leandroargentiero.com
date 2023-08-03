@@ -24,7 +24,7 @@ export const PageHeader = ({
         title
       )}
     </h1>
-    <div className="flex max-w-2xl flex-col gap-6 font-body leading-relaxed text-gray-500 dark:text-gray-400">
+    <div className="flex flex-col gap-6 font-body leading-relaxed text-gray-500 dark:text-gray-400">
       {children}
     </div>
   </header>
