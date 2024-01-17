@@ -1,5 +1,5 @@
 const SEO = {
-  defaultTitle: 'Leandro Argentiero - Frontend Developer & Designer',
+  defaultTitle: 'Leandro Argentiero - A Design-Driven Full Stack Developer',
   titleTemplate: '%s | Leandro Argentiero',
   description: `I craft digital solutions for human problems that look good and work well.`,
   canonical: 'https://www.leandroargentiero.com',

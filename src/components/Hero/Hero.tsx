@@ -44,7 +44,7 @@ export const Hero = () => (
               variants={fadeInY(0.5, '-1rem', '0rem')}
               className="mb-2 text-sm sm:text-base md:mb-4"
             >
-              Hi, I&apos;m Leandro
+              Hi, I&apos;m Leandro, a design-driven
             </motion.h1>
             <h1 className="relative flex max-w-2xl flex-col text-center text-5xl font-semibold leading-[2.8rem] tracking-tight sm:text-7xl sm:leading-[4rem] lg:text-8xl lg:leading-[5rem]">
               <motion.span
@@ -53,7 +53,7 @@ export const Hero = () => (
                 variants={fadeInX(0.5, '2.5rem', '0rem', 0.2)}
                 className="-ml-20"
               >
-                frontend
+                full stack
               </motion.span>
               <motion.span
                 initial="initial"
@@ -62,14 +62,6 @@ export const Hero = () => (
                 className="ml-20 md:ml-24"
               >
                 developer
-              </motion.span>
-              <motion.span
-                initial="initial"
-                animate="end"
-                variants={fadeInX(0.5, '2.5rem', '0rem', 0.2)}
-                className="-ml-4 "
-              >
-                {'& designer'}
               </motion.span>
             </h1>
             <motion.h2
